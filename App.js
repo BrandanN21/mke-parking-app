@@ -1,12 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, ImageBackground } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Brandan created this branch</Text>
-      <StatusBar style="auto" />
+    <View>
+      {/* <ImageBackground source={require('./assets/loading_page.png')}
+      style={styles.background}
+      >
+      </ImageBackground> */}
+      <Text>Hello Welcome to the app</Text>
     </View>
   );
 }
@@ -18,4 +21,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  background: {
+    width: '100%',
+    height: '100%'
+  }
 });
