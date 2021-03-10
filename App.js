@@ -10,6 +10,7 @@ import { MapScreen } from './src/screens/mapscreen/MapScreen';
 import { HomeScreen } from './src/screens/homescreen/HomeScreen';
 import LandingPage from './src/screens/landingpage/LandingPage';
 import AccountScreen from './src/screens/accountscreen/AccountScreen';
+import NotificationScreen from './src/screens/notifications/NotificationScreen';
 
 
 const Tab = createBottomTabNavigator();
@@ -28,6 +29,8 @@ const Tab = createBottomTabNavigator();
               iconName = focused ? 'map-marker' : 'map-marker';
             } else if (route.name === 'Account') {
               iconName = focused ? 'user' : 'user';
+            } else if (route.name === 'Notification') {
+              iconName = focused ? 'bell' : 'bell';
             }
             // You can return any component that you like here!
             return <FontAwesome name={iconName} size={size} color={color} />;
@@ -44,6 +47,7 @@ const Tab = createBottomTabNavigator();
         <Tab.Screen name="Home" component={HomeScreen} />
         <Tab.Screen name="Map" component={MapScreen}/>
         <Tab.Screen name="Account" component={AccountScreen}/>
+        <Tab.Screen name="Notification" component={NotificationScreen}/>
       </Tab.Navigator>
     </NavigationContainer>
   );
