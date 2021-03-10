@@ -9,6 +9,7 @@ export const MapScreen = () => {
     )
 }
 
+// styles for map screen
 const styles = StyleSheet.create({
     container: {
         flex: 1,

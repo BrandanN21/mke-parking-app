@@ -20,8 +20,8 @@ const Tab = createBottomTabNavigator();
       <Tab.Navigator
         screenOptions={({ route }) => ({
           tabBarIcon: ({ focused, color, size }) => {
+            // this allows use to dynamically change the icon based on the name of the route
             let iconName;
-
             if (route.name === 'Home') {
               iconName = focused ? 'home' : 'home';
             } else if (route.name === 'Map') {
@@ -29,17 +29,18 @@ const Tab = createBottomTabNavigator();
             } else if (route.name === 'Account') {
               iconName = focused ? 'user' : 'user';
             }
-
             // You can return any component that you like here!
             return <FontAwesome name={iconName} size={size} color={color} />;
             
           },
         })}
+        // changes colors of the icons active/inactive
         tabBarOptions={{
           activeTintColor: 'orange',
           inactiveTintColor: 'gray',
         }}
       >
+        {/* routes for application */}
         <Tab.Screen name="Home" component={HomeScreen} />
         <Tab.Screen name="Map" component={MapScreen}/>
         <Tab.Screen name="Account" component={AccountScreen}/>

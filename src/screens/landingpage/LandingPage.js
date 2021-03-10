@@ -20,6 +20,7 @@ export default function LandingPage() {
     )
 }
 
+// styles for landing page
 const styles = StyleSheet.create({
     container: {
       flex: 1,

@@ -8,12 +8,11 @@ export const HomeScreen = ({ navigation }) => {
             <ImageBackground source={require('../../.././assets/home-screen.png')}
             style={styles.background}
             >
-                <View>
-                    <Text style={styles.mainText}>
-                    Avoid parking tickets with NoTic MKE. A parking solution for East Side Drivers
-                    </Text>
-                    
-                </View>
+              <View>
+                  <Text style={styles.mainText}>
+                  Avoid parking tickets with NoTic MKE. A parking solution for East Side Drivers
+                  </Text>
+              </View>
             </ImageBackground>
         </View>
     )

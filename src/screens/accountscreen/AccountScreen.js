@@ -9,6 +9,7 @@ export default function AccountScreen() {
     )
 }
 
+// styles for account page
 const styles = StyleSheet.create({
     container: {
         flex: 1,
