@@ -1,11 +1,23 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
 
 export const MapScreen = () => {
     return (
-        <View>
-            <Text style={styles.text}>Adding google api soon! check later</Text>
-        </View>
+        <MapView
+            style={styles.map}
+            provider={PROVIDER_GOOGLE}
+            showsUserLocation
+            initialRegion={{
+            latitude: 37.78825,
+            longitude: -122.4324,
+            latitudeDelta: 0.0922,
+            longitudeDelta: 0.0421}}
+            showsMyLocationButton={true}
+            showsUserLocation={true}
+            >
+        </MapView> 
+
     )
 }
 
@@ -23,10 +35,15 @@ const styles = StyleSheet.create({
         padding: "2%",
         fontSize:  33,
         top: '50%'
+    },
+    map: {
+        ...StyleSheet.absoluteFillObject,
+        flex: 1
+    },
+    view: {
+        position: 'relative'
         
-
     }
 
 })
-
 export default MapScreen;
