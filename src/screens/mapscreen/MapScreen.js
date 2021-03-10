@@ -17,15 +17,24 @@ export const MapScreen = () => {
             showsMyLocationButton={true}
             showsUserLocation={true}
             >
+                {/* test for bradford ave cordinates */}
                 <Polyline
                     coordinates={[
-                        { latitude: 43.063757,  longitude: -87.887930 },
-                        { latitude: 43.063712, longitude: -87.883162}
+                        { latitude: 43.063757,  longitude: -87.887930 }, //point A
+                        { latitude: 43.063712, longitude: -87.883162} // point b 
                     ]}
                     strokeColor="red" // fallback for when `strokeColors` is not supported by the map-provider
-                    strokeWidth={6}
+                    strokeWidth={4}
                 >
-
+                </Polyline>
+                <Polyline
+                    coordinates={[
+                        { latitude: 43.066002, longitude: -87.887978}, //point a
+                        { latitude: 43.063757,  longitude: -87.887930 } //point b
+                    ]}
+                    stokeColor="red"
+                    strokeWidth={4}
+                >  
                 </Polyline>
         </MapView> 
 
