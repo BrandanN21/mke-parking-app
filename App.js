@@ -9,6 +9,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MapScreen } from './src/screens/mapscreen/MapScreen';
 import { HomeScreen } from './src/screens/homescreen/HomeScreen';
 import LandingPage from './src/screens/landingpage/LandingPage';
+import AccountScreen from './src/screens/accountscreen/AccountScreen';
 
 
 const Tab = createBottomTabNavigator();
@@ -41,7 +42,7 @@ const Tab = createBottomTabNavigator();
       >
         <Tab.Screen name="Home" component={HomeScreen} />
         <Tab.Screen name="Map" component={MapScreen}/>
-        <Tab.Screen name="Account" component={MapScreen}/>
+        <Tab.Screen name="Account" component={AccountScreen}/>
       </Tab.Navigator>
     </NavigationContainer>
   );
