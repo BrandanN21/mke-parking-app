@@ -4,7 +4,7 @@ import { View, Text, StyleSheet } from 'react-native';
 export const MapScreen = () => {
     return (
         <View>
-            <Text style={styles.text}>Map page</Text>
+            <Text style={styles.text}>Adding google api soon! check later</Text>
         </View>
     )
 }
