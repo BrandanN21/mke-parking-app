@@ -1,13 +1,14 @@
-import React from 'react';
+import React from 'react'
 import { View, Text, StyleSheet } from 'react-native';
 
-export default function NotificationScreen() {
+export function NotificationScreen() {
     return (
         <View>
             <Text style={styles.text}>Hello Notification Screen</Text>
         </View>
     )
-}
+};
+
 const styles = StyleSheet.create({
     text: {
         textAlign: 'center',
@@ -17,4 +18,3 @@ const styles = StyleSheet.create({
         top: '50%'
     },
 })
-
