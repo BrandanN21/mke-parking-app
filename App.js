@@ -11,6 +11,7 @@ import { HomeScreen } from './src/screens/homescreen/HomeScreen';
 import LandingPage from './src/screens/landingpage/LandingPage';
 import { NotificationScreen } from './src/screens/notificationscreen/NotificationScreen';
 import AccountScreen from './src/screens/accountscreen/AccountScreen';
+import PermitScreen from './src/screens/permitscreen/PermitScreen';
 
 
 
@@ -30,8 +31,8 @@ const Tab = createBottomTabNavigator();
               iconName = focused ? 'map-marker' : 'map-marker';
             } else if (route.name === 'Account') {
               iconName = focused ? 'user' : 'user';
-            } else if (route.name === 'Notification') {
-              iconName = focused ? 'bell' : 'bell';
+            } else if (route.name === 'Permits') {
+              iconName = focused ? 'clipboard' : 'clipboard';
             }
             // You can return any component that you like here!
             return <FontAwesome name={iconName} size={size} color={color} />;
@@ -44,10 +45,13 @@ const Tab = createBottomTabNavigator();
           inactiveTintColor: 'gray',
         }}
       >
-        {/* routes for application */}
+        {/* routes for application 
+        HOME, MAP, PERMITS, SETTINGS/ACCOUNT
+        notifications will be a sub menu in the account screen
+        */}
         <Tab.Screen name="Home" component={HomeScreen} />
         <Tab.Screen name="Map" component={MapScreen}/>
-        <Tab.Screen name="Notification" component={NotificationScreen}/>
+        <Tab.Screen name="Permits" component={PermitScreen}/>
         <Tab.Screen name="Account" component={AccountScreen}/>
       </Tab.Navigator>
     </NavigationContainer>
