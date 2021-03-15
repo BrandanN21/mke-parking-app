@@ -15,6 +15,8 @@ import AccountScreen from './src/screens/accountscreen/AccountScreen';
 import PermitScreen from './src/screens/permitscreen/PermitScreen';
 import { NightPermitScreen} from './src/screens/permitscreen/NightPermitScreen';
 import DayPermitScreen from './src/screens/permitscreen/DayPermitScreen';
+import StandardNightPermitScreen from './src/screens/permitscreen/StandardNightPermitScreen';
+import TempNightPermitScreen from './src/screens/permitscreen/TempNightPermitScreen';
 
 
 
@@ -67,6 +69,8 @@ const PermitStackScreen = () => (
   <PermitStack.Navigator>
     <PermitStack.Screen name="Permits Home" component={PermitScreen}/>
     <PermitStack.Screen name="Night Permits" component={NightPermitScreen}/>
+    <PermitStack.Screen name="Standard Night Permit" component={StandardNightPermitScreen}/>
+    <PermitStack.Screen name="Temporary Night Permit" component={TempNightPermitScreen}/>
     <PermitStack.Screen name="Day Permits" component={DayPermitScreen}/>
   </PermitStack.Navigator>
 )

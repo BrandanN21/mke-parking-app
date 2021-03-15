@@ -1,24 +1,38 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Linking } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Linking, Button, Touchable } from 'react-native';
 
-export function NightPermitScreen() {
+export function NightPermitScreen({ navigation}) {
     return (
         <View style={styles.container}>
             <Text style={styles.header}> City of Milwaukee</Text>
             <Text style={styles.header}> Night Permits</Text>
             <Text style={styles.text}>
-            Needed to park on City streets between the hours of 2:00 a.m. and 6:00 a.m. Monday through Saturday
-            $55/year or $20/4-month trimester
+            The city of Milwaukee offers multiple night parking permits 
             </Text>
             <Text style={styles.text}>
-            Purchase a night parking permit online, at Milwaukee Police District Stations, Parking Violation Bureaus, or the City of Milwaukee Tow Lot
-            Must follow alternate side overnight parking regulations, unless parked on an exception street.
+            Click on one of the buttons below
             </Text>
-            <TouchableOpacity style={styles.LogInButton} 
+            {/* Standard Night Parking Button */}
+            <TouchableOpacity style={styles.LogInButton}>
+            <Button
+            color='#FFF'
+            style={styles.logInText} 
+            title="Standard Night Permits"
+            onPress={() => navigation.navigate("Standard Night Permit")}/>
+            </TouchableOpacity>
+            {/* Temporary Night Parking Button */}
+            <TouchableOpacity style={styles.LogInButton}>
+            <Button
+            color='#FFF'
+            style={styles.logInText} 
+            title="Temporary Night Permits"
+            onPress={() => navigation.navigate("Temporary Night Permit")}/>
+            </TouchableOpacity>
+            {/* <TouchableOpacity style={styles.LogInButton} 
             onPress={() => Linking.openURL('https://duncan.imageenforcement.com/PermitSites/MilwaukeePermits')}
             >
                 <Text style={styles.logInText}>LogIn</Text>
-            </TouchableOpacity>
+            </TouchableOpacity> */}
         </View>
     )
 }
