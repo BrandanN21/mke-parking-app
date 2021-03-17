@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, ImageBackground, TouchableOpacity, Button } from 'react-native';
 import { buttons } from './permit-styles';
 
-export function DayPermitScreen() {
+export function DayPermitScreen({ navigation }) {
     return (
         <View style={styles.container}>
             <Text style={styles.header}> City of Milwaukee</Text>
@@ -19,7 +19,7 @@ export function DayPermitScreen() {
             color='#FFF'
             style={buttons.secondaryText} 
             title="Residential Non-conforming Permits"
-            onPress={() => navigation.navigate("Standard Night Permit")}/>
+            onPress={() => navigation.navigate("Non-conforming Permit")}/>
             </TouchableOpacity>
             {/* Temporary Night Parking Button */}
             <TouchableOpacity style={buttons.secondary}>
@@ -27,7 +27,7 @@ export function DayPermitScreen() {
             color='#FFF'
             style={buttons.secondaryText} 
             title="Commuter Impacted Residential Permits"
-            onPress={() => navigation.navigate("Temporary Night Permit")}/>
+            onPress={() => navigation.navigate("Commuter Permit")}/>
             </TouchableOpacity>
             
             {/* Night Shift Night Parking Button */}
@@ -36,7 +36,7 @@ export function DayPermitScreen() {
             color='#FFF'
             style={buttons.secondaryText} 
             title="Residential Only Permits"
-            onPress={() => navigation.navigate("Night Shift Workers Permit")}/>
+            onPress={() => navigation.navigate("Residential Permit")}/>
             </TouchableOpacity>
             <ImageBackground source={require('../../.././assets/skyline_orange.png')}
             style={styles.background}></ImageBackground>
