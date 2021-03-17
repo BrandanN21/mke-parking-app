@@ -7,7 +7,7 @@ import { buttons } from './permit-styles';
 export function PermitScreen({ navigation }) {
     return (
         <View style={styles.container}>
-            <ImageBackground style={styles.background} source={require('../../../assets/background-permit.png')}>
+            <ImageBackground style={styles.background} source={require('../../../assets/background-day.png')}>
                 <View style={styles.buttonContainer}>
                     {/* <Text>This the permit home screen</Text> */}
 
@@ -18,12 +18,15 @@ export function PermitScreen({ navigation }) {
                         <Button
                         color='#FFF'
                         style={buttons.primaryText}
-                        title="Day Permits"
+                        title="CLICK HERE"
                         />
                         
                     </TouchableOpacity>
-
-                    <TouchableOpacity 
+                </View>
+            </ImageBackground>
+            <ImageBackground style={styles.backgroundNight} source={require("../../../assets/background-night.png")}>
+                <View>
+                <TouchableOpacity 
                         style={buttons.night}
                         title="Night Permits"
                         onPress={() => navigation.navigate("Night Permits")}
@@ -31,7 +34,7 @@ export function PermitScreen({ navigation }) {
                         <Button
                         color='#18224B'
                         style={buttons.primaryText}
-                        title="Night Permits"
+                        title="CLICK HERE"
                         />
                     </TouchableOpacity>
                 </View>
@@ -49,6 +52,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
+        flexDirection: 'column'
     },
     text: {
         textAlign: 'center',
@@ -72,7 +76,12 @@ const styles = StyleSheet.create({
     },
     background: {
         width: '100%',
-        height: '100%',
+        height: '80%',
+        top: '18%'
+    },
+    backgroundNight: {
+        width: '100%',
+        height: '80%',
         top: '0%'
     },
     buttonContainer: {

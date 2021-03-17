@@ -36,20 +36,20 @@ const buttons = StyleSheet.create({
     night: {
         backgroundColor: '#FFF',
         color: '#18224B',
-        width: "50%",
+        width: "30%",
         borderRadius: 25,
-        marginLeft: '0%',
-        marginRight: '10%',
-        marginBottom: '15%'
+        marginLeft: '5%',
+        marginRight: '0%',
+        marginTop: '7%'
     },
     day: {
         backgroundColor: '#18224B',
         color: '#18224B',
-        width: "50%",
+        width: "30%",
         borderRadius: 25,
-        marginLeft: '10%',
+        marginLeft: '20%',
         marginRight: '10%',
-        marginTop: '15%',
+        marginTop: '93%',
         left: '30%'
     }
 })

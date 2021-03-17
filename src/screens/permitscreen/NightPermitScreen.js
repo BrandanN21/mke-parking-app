@@ -47,7 +47,7 @@ export function NightPermitScreen({ navigation}) {
             title="Disabled Night Permits"
             onPress={() => navigation.navigate("Disabled Night Permit")}/>
             </TouchableOpacity>
-            <ImageBackground source={require('../../.././assets/skyline_orange.png')}
+            <ImageBackground source={require('../../.././assets/skyline_lightblue.png')}
             style={styles.background}></ImageBackground>
             {/* <TouchableOpacity style={styles.LogInButton} 
             onPress={() => Linking.openURL('https://duncan.imageenforcement.com/PermitSites/MilwaukeePermits')}
