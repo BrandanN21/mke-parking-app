@@ -28,6 +28,24 @@ export function NightPermitScreen({ navigation}) {
             title="Temporary Night Permits"
             onPress={() => navigation.navigate("Temporary Night Permit")}/>
             </TouchableOpacity>
+            
+            {/* Night Shift Night Parking Button */}
+            <TouchableOpacity style={styles.LogInButton}>
+            <Button
+            color='#FFF'
+            style={styles.logInText} 
+            title="Night Shift Workers Permits"
+            onPress={() => navigation.navigate("Night Shift Workers Permit")}/>
+            </TouchableOpacity>
+
+            {/* Disabled Night Parking Button */}
+            <TouchableOpacity style={styles.LogInButton}>
+            <Button
+            color='#FFF'
+            style={styles.logInText} 
+            title="Disabled Night Permits"
+            onPress={() => navigation.navigate("Disabled Night Permit")}/>
+            </TouchableOpacity>
             {/* <TouchableOpacity style={styles.LogInButton} 
             onPress={() => Linking.openURL('https://duncan.imageenforcement.com/PermitSites/MilwaukeePermits')}
             >

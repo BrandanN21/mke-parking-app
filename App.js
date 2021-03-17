@@ -17,6 +17,8 @@ import { NightPermitScreen} from './src/screens/permitscreen/NightPermitScreen';
 import DayPermitScreen from './src/screens/permitscreen/DayPermitScreen';
 import StandardNightPermitScreen from './src/screens/permitscreen/StandardNightPermitScreen';
 import TempNightPermitScreen from './src/screens/permitscreen/TempNightPermitScreen';
+import NightWorkerPermitScreen from './src/screens/permitscreen/NightWorkerPermitScreen';
+import DisabledNightPermitScreen from './src/screens/permitscreen/DisabledNightPermitScreen';
 
 
 
@@ -72,6 +74,8 @@ const PermitStackScreen = () => (
     <PermitStack.Screen name="Standard Night Permit" component={StandardNightPermitScreen}/>
     <PermitStack.Screen name="Temporary Night Permit" component={TempNightPermitScreen}/>
     <PermitStack.Screen name="Day Permits" component={DayPermitScreen}/>
+    <PermitStack.Screen name="Night Shift Workers Permit" component={NightWorkerPermitScreen}/>
+    <PermitStack.Screen name="Disabled Night Permit" component={DisabledNightPermitScreen}/>
   </PermitStack.Navigator>
 )
 
