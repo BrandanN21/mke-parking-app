@@ -1,24 +1,41 @@
 import React from 'react';
-import { View, Text, StyleSheet, Button } from 'react-native';
-import { ScreenContainer } from 'react-native-screens';
-import { NightPermitScreen } from './NightPermitScreen';
-import { createStackNavigator } from '@react-navigation/stack';
+import { View, Text, StyleSheet, Button, ImageBackground } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
-import { NotificationScreen } from '../notificationscreen/NotificationScreen';
+import { buttons } from './permit-styles';
 
 
 export function PermitScreen({ navigation }) {
     return (
-        <View style={styles.center}>
-            <Text>This the permit home screen</Text>
-            <Button 
-                title="go to night screen"
-                onPress={() => navigation.navigate("Night Permits")}
-            />
-            <Button 
-                title="go to day screen"
-                onPress={() => navigation.navigate("Day Permits")}
-            />
+        <View style={styles.container}>
+            <ImageBackground style={styles.background} source={require('../../../assets/background-permit.png')}>
+                <View style={styles.buttonContainer}>
+                    {/* <Text>This the permit home screen</Text> */}
+
+                    <TouchableOpacity 
+                    onPress={() => navigation.navigate("Day Permits")}
+                    style={buttons.day}
+                    >
+                        <Button
+                        color='#FFF'
+                        style={buttons.primaryText}
+                        title="Day Permits"
+                        />
+                        
+                    </TouchableOpacity>
+
+                    <TouchableOpacity 
+                        style={buttons.night}
+                        title="Night Permits"
+                        onPress={() => navigation.navigate("Night Permits")}
+                    >
+                        <Button
+                        color='#18224B'
+                        style={buttons.primaryText}
+                        title="Night Permits"
+                        />
+                    </TouchableOpacity>
+                </View>
+            </ImageBackground>
         </View>
     )
 }
@@ -52,7 +69,18 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         textAlign: "center",
-        },
+    },
+    background: {
+        width: '100%',
+        height: '100%',
+        top: '0%'
+    },
+    buttonContainer: {
+        flex: 1,
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+        left: '6%'
+    }
 
 })
 
