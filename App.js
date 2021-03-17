@@ -69,7 +69,7 @@ const Tab = createBottomTabNavigator();
 const PermitStack = createStackNavigator();
 const PermitStackScreen = () => (
   <PermitStack.Navigator>
-    <PermitStack.Screen name="Permits Home" component={PermitScreen}/>
+    <PermitStack.Screen name="Permits" component={PermitScreen}/>
     <PermitStack.Screen name="Night Permits" component={NightPermitScreen}/>
     <PermitStack.Screen name="Standard Night Permit" component={StandardNightPermitScreen}/>
     <PermitStack.Screen name="Temporary Night Permit" component={TempNightPermitScreen}/>

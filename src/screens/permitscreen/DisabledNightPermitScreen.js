@@ -1,5 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Linking } from 'react-native';
+import { buttons } from './permit-styles';
+
 
 export default function DisabledNightPermitScreen({ navigation }) {
     return (
@@ -58,10 +60,10 @@ const styles = StyleSheet.create({
     },
     logInText: {
         textAlign: 'center',
-        fontWeight: 'bold',
+        fontWeight: 'normal',
         padding: "2%",
         fontSize:  25,
-        color: '#FFAC36'
+        color: '#FFF'
       },
     LogInButton: {
         backgroundColor: '#18224B',

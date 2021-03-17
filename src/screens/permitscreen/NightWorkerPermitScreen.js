@@ -1,5 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Linking } from 'react-native';
+import { buttons } from './permit-styles';
+
 
 export default function NightWorkerPermitScreen({ navigation }) {
     return (
@@ -19,15 +21,15 @@ export default function NightWorkerPermitScreen({ navigation }) {
             <Text style={styles.text}>
             You can login/create an account for the City of Milwaukee Parking below.
             </Text>
-            <TouchableOpacity style={styles.LogInButton} 
+            <TouchableOpacity style={buttons.secondary} 
             onPress={() => Linking.openURL('https://duncan.imageenforcement.com/PermitSites/MilwaukeePermits')}
             >
-                <Text style={styles.logInText}>Log In</Text>
+                <Text style={buttons.secondaryText}>Log In</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.LogInButton} 
             onPress={() => Linking.openURL('https://duncan.imageenforcement.com/PermitSites/MilwaukeePermits/Home/NewUser')}
             >
-                <Text style={styles.logInText}>Create an Account</Text>
+                <Text style={buttons.secondaryText}>Create an Account</Text>
             </TouchableOpacity>
         </View>
     )
