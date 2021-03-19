@@ -1,5 +1,7 @@
 import React from 'react';
-import { StyleSheet, Text, View, ImageBackground, TouchableOpacity, Touchable } from 'react-native';
+import { StyleSheet, Text, View, ImageBackground, TouchableOpacity, Touchable, Animated } from 'react-native';
+import { CountdownCircleTimer } from 'react-native-countdown-circle-timer';
+import Constants from 'expo-constants';
 
 
 export const HomeScreen = ({ navigation }) => {
@@ -13,6 +15,23 @@ export const HomeScreen = ({ navigation }) => {
                   Avoid parking tickets with NoTic MKE. A parking solution for East Side Drivers
                   </Text>
               </View>
+              <View style={styles.container}>
+              <CountdownCircleTimer
+                isPlaying
+                duration={2000}
+                colors="red"
+                onComplete={() => {
+                  console.log('ON_COMPLETE BEFORE RETURN')
+                  return [true, 0]
+                }}
+              >
+                {({ remainingTime, animatedColor }) => (
+                  <Animated.Text style={styles.remainingTime}>
+                    {remainingTime}
+                  </Animated.Text>
+                )}
+              </CountdownCircleTimer>
+            </View>
             </ImageBackground>
         </View>
     )
