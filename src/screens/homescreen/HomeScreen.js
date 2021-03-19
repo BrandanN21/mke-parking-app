@@ -1,69 +1,91 @@
-import React from 'react';
-import { StyleSheet, Text, View, ImageBackground, TouchableOpacity, Touchable, Animated } from 'react-native';
+import React, { useState, useEffect} from 'react';
+import { StyleSheet, Text, View, ImageBackground, TouchableOpacity, Touchable, Animated, TextInput, Button } from 'react-native';
 import { CountdownCircleTimer } from 'react-native-countdown-circle-timer';
 import Constants from 'expo-constants';
+import { render } from 'react-dom';
+
 
 
 export const HomeScreen = ({ navigation }) => {
+  const [count, setCount] = React.useState(0)
     return (
-        <View>
-
+      <View style={styles.container}>
             <ImageBackground source={require('../../.././assets/home-screen.png')}
             style={styles.background}
             >
-
-            
-              <View>
-                  <Text style={styles.mainText}>
-                  Avoid parking tickets with NoTic MKE. A parking solution for East Side Drivers
-                  </Text>
-              </View>
-              <View style={styles.container}>
-              <CountdownCircleTimer
+              
+              <View style={styles.timercontainer}>
+              <CountdownCircleTimer 
                 isPlaying
-                // here is where we can set the time for timer
                 duration={20}
-                // here is where the color of timer is called
-                colors="#32a852"
+                colors={[
+                  ['#18224B', 0.33],
+                  ['#009DD9', 0.33],
+                ]}
+                size={342}
+                isLinearGradient="true"
+                
                 onComplete={() => {
                   console.log('ON_COMPLETE BEFORE RETURN')
                   return [true, 0]
                 }}
               >
                 {({ remainingTime, animatedColor }) => (
+                  
                   <Animated.Text style={styles.remainingTime}>
                     {remainingTime}
                   </Animated.Text>
                 )}
               </CountdownCircleTimer>
-            </View>
+
+
+              </View>
+              <View style={styles.textcontainer}>
+                <Text style={styles.mainText}>
+                Avoid parking tickets with NoTic MKE. A parking solution for East Side Drivers
+
+                </Text>
+
+
+              </View>
             </ImageBackground>
-        </View>
+            
+      </View>
     )
 }
 
 const styles = StyleSheet.create({
     container: {
       flex: 1,
+      backgroundColor: '#ecf0f1',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    textcontainer: {
+      alignItems: 'center',
+
+    },
+    timercontainer: {
       justifyContent: 'center',
       alignItems: 'center',
-      paddingTop: Constants.statusBarHeight,
-      backgroundColor: '#F0F0F0',
-      padding: 8,
+      paddingTop: '50%',
+
+
     },
-  
+    remainingTime: {
+      fontSize: 46,
+      color: '#FFAC36',
+    },
+    
     background: {
       width: '100%',
       height: '100%',
-      top: '0%'
+      flex: 1,
     }, 
     mainText: {
       color: 'white',
-      marginTop: '170%',
-      marginLeft: '10%',
-      textAlign: 'center',
-      marginRight: '10%',
-      fontSize: 20
+      fontSize: 20,
+      marginTop: '35%',
     },
     startText: {
       textAlign: 'center',
@@ -80,10 +102,7 @@ const styles = StyleSheet.create({
       marginRight: '10%',
       marginTop: '10%'
     },
-    remainingTime: {
-      fontSize: 46,
-    },
-    
   });
-
+        
+            
 export default HomeScreen;
