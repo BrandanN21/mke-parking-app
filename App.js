@@ -9,7 +9,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MapScreen } from './src/screens/mapscreen/MapScreen';
 import { HomeScreen } from './src/screens/homescreen/HomeScreen';
 import LandingPage from './src/screens/landingpage/LandingPage';
-import { NotificationScreen } from './src/screens/notificationscreen/NotificationScreen';
+// import { NotificationScreen } from './src/screens/notificationscreen/NotificationScreen';
 import AccountScreen from './src/screens/accountscreen/AccountScreen';
 import PermitScreen from './src/screens/permitscreen/PermitScreen';
 

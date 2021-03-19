@@ -14,10 +14,6 @@ export default function NotificationScreen() {
     return (
 
         <View>
-         
-            <ImageBackground source={require('../../.././assets/notification-pic.png')}
-            style={styles.background }
-            ></ImageBackground>
             <View>
                 <Text style={styles.emergencytext}> Current Status: No Snow Emergency </Text>
             </View>

@@ -7,9 +7,12 @@ import Constants from 'expo-constants';
 export const HomeScreen = ({ navigation }) => {
     return (
         <View>
+
             <ImageBackground source={require('../../.././assets/home-screen.png')}
             style={styles.background}
             >
+
+            
               <View>
                   <Text style={styles.mainText}>
                   Avoid parking tickets with NoTic MKE. A parking solution for East Side Drivers
@@ -18,8 +21,10 @@ export const HomeScreen = ({ navigation }) => {
               <View style={styles.container}>
               <CountdownCircleTimer
                 isPlaying
-                duration={2000}
-                colors="red"
+                // here is where we can set the time for timer
+                duration={20}
+                // here is where the color of timer is called
+                colors="#32a852"
                 onComplete={() => {
                   console.log('ON_COMPLETE BEFORE RETURN')
                   return [true, 0]
@@ -40,10 +45,13 @@ export const HomeScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#fff',
-      alignItems: 'center',
       justifyContent: 'center',
+      alignItems: 'center',
+      paddingTop: Constants.statusBarHeight,
+      backgroundColor: '#F0F0F0',
+      padding: 8,
     },
+  
     background: {
       width: '100%',
       height: '100%',
@@ -72,6 +80,10 @@ const styles = StyleSheet.create({
       marginRight: '10%',
       marginTop: '10%'
     },
+    remainingTime: {
+      fontSize: 46,
+    },
+    
   });
 
 export default HomeScreen;
