@@ -17,7 +17,9 @@ export const HomeScreen = ({ navigation }) => {
               
               <View style={styles.timercontainer}>
               <CountdownCircleTimer 
+              //here is the boolean for if the button should start or not
                 isPlaying={false}
+                //here is the starting time for button
                 duration={20}
                 colors={[
                   ['#18224B', 0.33],
@@ -44,6 +46,7 @@ export const HomeScreen = ({ navigation }) => {
 
               <View style={styles.dropdownstyles}>
                 <DropDownPicker
+                //these are the initial values for the drop down menu along with the time in minutes
                   items={[
                     { label: '2 hours', value: '120' },
                     { label: '3 hours', value: '180' },
