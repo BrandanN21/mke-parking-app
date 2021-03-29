@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, ImageBackground, TouchableOpacity, Touchable, A
 import { CountdownCircleTimer } from 'react-native-countdown-circle-timer';
 import Constants from 'expo-constants';
 import { render } from 'react-dom';
+import DropDownPicker from 'react-native-dropdown-picker';
 
 
 
@@ -16,7 +17,7 @@ export const HomeScreen = ({ navigation }) => {
               
               <View style={styles.timercontainer}>
               <CountdownCircleTimer 
-                isPlaying
+                isPlaying={false}
                 duration={20}
                 colors={[
                   ['#18224B', 0.33],
@@ -40,6 +41,25 @@ export const HomeScreen = ({ navigation }) => {
 
 
               </View>
+
+              <View style={styles.dropdownstyles}>
+                <DropDownPicker
+                  items={[
+                    { label: '2 hours', value: '120' },
+                    { label: '3 hours', value: '180' },
+                    { label: '4 hours', value: '240' }
+                  ]}
+                  placeholder="Select your parking time"
+                  containerStyle={{width: 200, height: 40}}
+                  
+                  style={{backgroundColor: '#ffffff'}}
+                  dropDownStyle={{ backgroundColor: 'white' }}
+
+
+
+
+                />
+              </View>
               <View style={styles.textcontainer}>
                 <Text style={styles.mainText}>
                 Avoid parking tickets with NoTic MKE. A parking solution for East Side Drivers
@@ -48,11 +68,22 @@ export const HomeScreen = ({ navigation }) => {
 
 
               </View>
+              <View>
+                <Button
+                  title="Start Timer"
+                  
+                  
+
+
+                />
+
+              </View>
             </ImageBackground>
             
       </View>
     )
 }
+
 
 const styles = StyleSheet.create({
     container: {
@@ -102,6 +133,14 @@ const styles = StyleSheet.create({
       marginRight: '10%',
       marginTop: '10%'
     },
+    dropdownstyles: {
+      justifyContent: 'center',
+      alignContent: 'center',
+      paddingLeft: '25%'
+      
+
+
+    }
   });
         
             
