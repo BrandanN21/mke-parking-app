@@ -5,7 +5,7 @@ import { StyleSheet, Text, View, ImageBackground, TouchableOpacity, Touchable } 
 export const HomeScreen = ({ navigation }) => {
     return (
         <View>
-            <ImageBackground source={require('../../.././assets/home-screen.png')}
+            <ImageBackground source={require('../../.././assets/background-blank.png')}
             style={styles.background}
             >
               <View>
