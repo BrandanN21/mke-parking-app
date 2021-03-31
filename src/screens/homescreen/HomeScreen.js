@@ -4,11 +4,49 @@ import { CountdownCircleTimer } from 'react-native-countdown-circle-timer';
 import Constants from 'expo-constants';
 import { render } from 'react-dom';
 import DropDownPicker from 'react-native-dropdown-picker';
+import ReactDom from "react-dom";
+
+
 
 
 
 export const HomeScreen = ({ navigation }) => {
   const [count, setCount] = React.useState(0)
+  
+//below are the two constants that declare the time formatting as well as the return statement that shows them
+  const formatRemainingTime = time => {
+    const hours = Math.floor(time / 3600);
+    const minutes = Math.floor((time % 3600) / 60);
+    const seconds = time % 60;
+
+    return `${hours}:${minutes}:${seconds}`;
+
+  }
+
+  const renderTime = ({ remainingTime }) => {
+    if (remainingTime === 0) {
+      return <View style={styles.timer}><Text>Time over.....</Text></View>;
+    }
+  
+
+  return (
+    <View style={styles.timer}>
+      <View style={styles.textRemaining}><Text style={styles.textRemaining2}>Remaining Time</Text></View>
+      <View stlye={styles.valueTime}><Text style={styles.valueTime2}>{formatRemainingTime(remainingTime)}</Text></View>
+    </View>
+  );  
+  };
+  
+  
+
+
+  
+
+  
+
+  
+
+ 
     return (
       <View style={styles.container}>
             <ImageBackground source={require('../../.././assets/home-screen.png')}
@@ -18,9 +56,9 @@ export const HomeScreen = ({ navigation }) => {
               <View style={styles.timercontainer}>
               <CountdownCircleTimer 
               //here is the boolean for if the button should start or not
-                isPlaying={false}
+                isPlaying={true}
                 //here is the starting time for button
-                duration={20}
+                duration={300}
                 colors={[
                   ['#18224B', 0.33],
                   ['#009DD9', 0.33],
@@ -33,12 +71,8 @@ export const HomeScreen = ({ navigation }) => {
                   return [true, 0]
                 }}
               >
-                {({ remainingTime, animatedColor }) => (
-                  
-                  <Animated.Text style={styles.remainingTime}>
-                    {remainingTime}
-                  </Animated.Text>
-                )}
+                {renderTime}
+
               </CountdownCircleTimer>
 
 
@@ -72,13 +106,10 @@ export const HomeScreen = ({ navigation }) => {
 
               </View>
               <View>
-                <Button
-                  title="Start Timer"
-                  
+                <Button title="Start Timer">
                   
 
-
-                />
+                </Button>
 
               </View>
             </ImageBackground>
@@ -143,7 +174,21 @@ const styles = StyleSheet.create({
       
 
 
+    },
+    textRemaining2: {
+      color: '#FFAC36',
+      fontSize: 25,
+      textAlign: 'center',
+      
+    },
+    valueTime2: {
+      color: '#FFAC36',
+      fontSize: 50,
+      textAlign: 'center',
+      
+
     }
+    
   });
         
             
