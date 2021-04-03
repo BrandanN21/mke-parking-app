@@ -46,7 +46,7 @@ export const HomeScreen = ({ navigation }) => {
     return `${hours}:${minutes}:${seconds}`;
 
   }
-// here is the function that displays text when timer is done
+// here is the function that displays text when timer is done, as well as the start text telling user to select a time
   const renderTime = ({ remainingTime }) => {
     if (remainingTime === 0) {
       return <View style={styles.timer}><Text style={styles.completeText}>Time over.....</Text></View>;
