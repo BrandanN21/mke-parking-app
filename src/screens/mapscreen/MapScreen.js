@@ -475,6 +475,13 @@ export const MapScreen = () => {
                 </Polyline> 
 
 
+                    {/*   
+
+                    BEGINNING OF
+                    1 through 6 points along N Wahl Ave (GREEN)
+                    
+                    */} 
+
                 <Polyline
                 // 1st point- E Belleview Pl & N Wahl Ave to N Wahl Ave (GREEN)
                 coordinates={[
@@ -487,12 +494,8 @@ export const MapScreen = () => {
                 </Polyline> 
 
 
-
-
-
-
                 <Polyline
-                // 1st point- N Wahl Ave to N Wahl Ave (GREEN)
+                // 2nd point- N Wahl Ave to N Wahl Ave (GREEN)
                 coordinates={[
                     { latitude: 43.064518,  longitude: -87.873037}, //point A- N Wahl Ave
                     { latitude: 43.065032,  longitude: -87.872850} // point B- N Wahl Ave
@@ -504,7 +507,7 @@ export const MapScreen = () => {
 
 
                 <Polyline
-                // 2nd point- N Wahl Ave to N Wahl Ave (GREEN)
+                // 3rd point- N Wahl Ave to N Wahl Ave (GREEN)
                 coordinates={[
                     { latitude: 43.065032,  longitude: -87.872850}, //point A- N Wahl Ave
                     { latitude: 43.065646,  longitude: -87.872788} // point B- N Wahl Ave
@@ -515,7 +518,7 @@ export const MapScreen = () => {
                 </Polyline>
 
                 <Polyline
-                // 3rd point- N Wahl Ave to N Wahl Ave (GREEN)
+                // 4th point- N Wahl Ave to N Wahl Ave (GREEN)
                 coordinates={[
                     { latitude: 43.065646,  longitude: -87.872788}, //point A- N Wahl Ave
                     { latitude: 43.066434,  longitude: -87.872932 } // point B- N Wahl Ave
@@ -526,7 +529,7 @@ export const MapScreen = () => {
                 </Polyline>
 
                 <Polyline
-                // 4th point- N Wahl Ave to N Wahl Ave (GREEN)
+                // 5th point- N Wahl Ave to N Wahl Ave (GREEN)
                 coordinates={[
                     { latitude: 43.066434,  longitude: -87.872932}, //point A- N Wahl Ave
                     { latitude: 43.067281,  longitude: -87.873299 } // point B- N Wahl Ave
@@ -538,7 +541,7 @@ export const MapScreen = () => {
 
 
                 <Polyline
-                // 5th point- N Wahl Ave to N Wahl Ave & N Lake Dr (GREEN)
+                // 6th point- N Wahl Ave to N Wahl Ave & N Lake Dr (GREEN)
                 coordinates={[
                     { latitude: 43.067281,  longitude: -87.873299 }, //point A- N Wahl Ave
                     { latitude: 43.067319,  longitude: -87.873385 } // point B- N Wahl Ave & N Lake Dr
@@ -549,7 +552,97 @@ export const MapScreen = () => {
                 </Polyline>
 
 
-                
+                 {/*   
+
+                    END OF
+                    1 through 6 points along N Wahl Ave (GREEN)
+                    
+                */} 
+
+
+
+
+                   {/*   
+
+                    BEGINNING OF
+                    1 through  points along N Wahl Ave (GOING SOUTH- GREEN)
+                    
+                */} 
+
+                <Polyline
+                // 1st point- E Belleview Pl & N Wahl Ave to N Wahl Ave & E Bradford Ave (GREEN)
+                coordinates={[
+                    { latitude: 43.063801,  longitude: -87.873634}, //point A- E Belleview Pl & N Wahl Ave
+                    { latitude: 43.062199,  longitude: -87.875253} // point B- N Wahl Ave & E Bradford Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline> 
+
+                <Polyline
+                // 2nd point- N Wahl Ave & E Bradford Ave to N Wahl Street(GREEN)
+                coordinates={[
+                    { latitude: 43.062199,  longitude: -87.875253}, //point A- N Wahl Ave & E Bradford Ave
+                    { latitude: 43.060751,  longitude: -87.876575} // point B- N Wahl Ave 
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline> 
+
+                <Polyline
+                // 3rd point- N Wahl Ave to N Wahl Street(GREEN)
+                coordinates={[
+                    { latitude: 43.060751,  longitude: -87.876575}, //point A- N Wahl Ave e
+                    { latitude: 43.060394,  longitude: -87.877392} // point B- N Wahl Ave 
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline> 
+
+                <Polyline
+                // 4th point- N Wahl Ave to N Wahl Street (GREEN)
+                coordinates={[
+                    { latitude: 43.060394,  longitude: -87.877392}, //point A- N Wahl Ave
+                    { latitude: 43.060271,  longitude: -87.878458 } // point B- N Wahl Ave 
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+                {/*   
+
+                   END OF
+                    1 through 4 points along N Wahl Ave (GOING SOUTH- GREEN)
+                    
+                */} 
+
+                <Polyline
+               // N Wahl Ave & N Terrace Ave to N Terrace Ave & E North Ave (GREEN)
+                coordinates={[
+                    { latitude: 43.066046,  longitude: -87.872856}, //point A- N Wahl Ave & N Terrace Ave
+                    { latitude: 43.059357,  longitude: -87.879354 } // point B- N Terrace Ave & E North Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+               // E Bradford Ave & N Lake Dr to E Bradford Ave & N Wahl St (GREEN)
+                coordinates={[
+                    { latitude: 43.063654,  longitude: -87.878060}, //point A- E Bradford Ave & N Lake Dr
+                    { latitude: 43.062179,  longitude: -87.875250 } // point B- E Bradford Ave & N Wahl St
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
 
                 
 
