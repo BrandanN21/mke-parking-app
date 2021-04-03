@@ -17,7 +17,69 @@ export const MapScreen = () => {
             showsMyLocationButton={true}
             showsUserLocation={true}
             >
-                {/* test for bradford ave cordinates */}
+               
+               <Polyline
+               // Maryland Ave & Edgewood Ave to N Lake Dr
+                    coordinates={[
+                        { latitude: 43.081926,  longitude: -87.882356 }, //point A
+                        { latitude: 43.081899, longitude: -87.872835 } // point b 
+                    ]}
+                    strokeColor="red" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                //1st point- Edgewood Ave & N Lake Dr to E Park Pl
+                    coordinates={[
+                        { latitude: 43.081919, longitude: -87.872767 }, //point A- Edgewood Ave & N Lake Dr
+                        { latitude: 43.07895,  longitude: -87.872529 } // point B- Downer Woods & N Lake Dr
+                    ]}
+                    strokeColor="red" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                 <Polyline
+                // 2nd point- Edgewood Ave & N Lake Dr to E Park Pl
+                    coordinates={[
+                        { latitude: 43.07895, longitude: -87.872529}, //point A- Downer Woods & N Lake Dr
+                        { latitude: 43.067423,  longitude: -87.873343 } //point B- E Park Pl 
+                    ]}
+                    strokeColor="red" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+
+                <Polyline
+                // 1st point- Locust Street & N Lake Dr to N Humboldt Blvd
+                    coordinates={[
+                        { latitude: 43.070945, longitude: -87.872268}, //point A- E Locust Street
+                        { latitude: 43.071064,  longitude: -87.891480 } // point B- Riverside Park 
+                    ]}
+                    strokeColor="red" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline> 
+
+               
+                <Polyline
+                // 2nd point- Locust Street & N Lake Dr to N Humboldt Blvd
+                    coordinates={[
+                        { latitude: 43.071064,  longitude: -87.891480 }, // point A- Riverside Park 
+                        {latitude: 43.071098, longitude: -87.897662} //point A- N Humboldt Blvd
+                    ]}
+                    strokeColor="red" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline> 
+
+               
+                {/* test for bradford ave cordinates
                 <Polyline
                     coordinates={[
                         { latitude: 43.063757,  longitude: -87.887930 }, //point A
@@ -35,7 +97,7 @@ export const MapScreen = () => {
                     stokeColor="red"
                     strokeWidth={4}
                 >  
-                </Polyline>
+                </Polyline> */}
         </MapView> 
 
     )
