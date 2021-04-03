@@ -54,19 +54,14 @@ export const MapScreen = () => {
                 </Polyline>
 
 
+                    {/*   
+                    
+                    1 through 8 points along N Lake Dr (RED)
+                    
+                    */}
+                
                 <Polyline
-                // E Edgewood Ave & N Lake Dr to N Lake Dr & E Newport Ave (GREEN)
-                coordinates={[
-                    { latitude: 43.081952, longitude: -87.872848 }, //point A- E Edgewood Ave & N Lake Dr
-                    { latitude: 43.079444,  longitude: -87.872573 }, //point B- N Lake Dr & E Newport Ave
-                    ]}
-                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
-                    strokeWidth={4}
-                >
-                </Polyline>
-
-                <Polyline
-                // E Edgewood Ave & N Lake Dr to N Lake Dr & E Newport Ave (RED)
+                // 1st point- E Edgewood Ave & N Lake Dr to N Lake Dr & E Newport Ave (RED)
                 coordinates={[
                     { latitude: 43.081921, longitude: -87.872786}, //point A- E Edgewood Ave & N Lake Dr
                     { latitude: 43.079442,  longitude: -87.872491 }, //point B- N Lake Dr & E Newport Ave
@@ -78,7 +73,7 @@ export const MapScreen = () => {
 
 
                  <Polyline
-                // N Lake Dr & E Newport Ave to N Lake Dr (RED)
+                // 2nd point- N Lake Dr & E Newport Ave to N Lake Dr (RED)
                     coordinates={[
                         { latitude: 43.079442,  longitude: -87.872491 }, //point A- N Lake Dr & E Newport Ave
                         { latitude: 43.078333,  longitude: -87.87235 } // point B- N Lake Dr
@@ -90,7 +85,7 @@ export const MapScreen = () => {
 
 
                 <Polyline
-                // N Lake Dr to N Lake Dr (RED)
+                // 3rd point- N Lake Dr to N Lake Dr (RED)
                     coordinates={[
                         { latitude: 43.078333,  longitude: -87.87235 }, //point A- N Lake Dr
                         { latitude: 43.076171,  longitude: -87.872067 } // point B- N Lake Dr
@@ -102,7 +97,7 @@ export const MapScreen = () => {
 
 
                 <Polyline
-                // N Lake Dr to N Lake & N Lincoln Memorial Dr(RED)
+                // 4th point- N Lake Dr to N Lake & N Lincoln Memorial Dr(RED)
                     coordinates={[
                         { latitude: 43.076171,  longitude: -87.872067 }, //point A- N Lake Dr
                         { latitude: 43.074531,  longitude: -87.871843 } // point B- N Lake Dr & N Lincoln Memorial Dr
@@ -114,7 +109,7 @@ export const MapScreen = () => {
 
 
                 <Polyline
-                // N Lake Dr to N Lake & N Lincoln Memorial Dr(RED)
+                //5th point- N Lake Dr to N Lake & N Lincoln Memorial Dr(RED)
                     coordinates={[
                         { latitude: 43.074531,  longitude: -87.871843 }, //point A- N Lake Dr & N Lincoln Memorial Dr
                         {latitude: 43.074418,  longitude: -87.871924} // point B- N Lake Dr 
@@ -126,7 +121,7 @@ export const MapScreen = () => {
                 
 
              <Polyline
-                // E Kenwood Blvd & N Lincoln Memorial Dr to E Locust St & N Lake Dr (RED)
+                // 6th point- E Kenwood Blvd & N Lincoln Memorial Dr to E Locust St & N Lake Dr (RED)
                     coordinates={[
                         { latitude: 43.074418,  longitude: -87.871924}, //point A- E Kenwood Blvd & N Lincoln Memorial Dr
                         { latitude: 43.070939,  longitude: -87.872291 } // point B- E Locust St & N Lake Dr
@@ -138,7 +133,7 @@ export const MapScreen = () => {
 
 
                 <Polyline
-                // N Lake Dr & N Lincoln Memorial Dr to N Lake Dr & E Newberry Blvd (RED)
+                // 7th point- N Lake Dr & N Lincoln Memorial Dr to N Lake Dr & E Newberry Blvd (RED)
                     coordinates={[
                         { latitude: 43.070945, longitude: -87.872268}, //point A- N Lake Dr & N Lincoln Memorial Dr
                         { latitude: 43.069428,  longitude: -87.872709 } // point B- N Lake Dr & E Newberry Blvd 
@@ -150,7 +145,7 @@ export const MapScreen = () => {
 
 
                <Polyline
-                // N Lake Dr & E Newberry Blvd to N Lake Dr & E Park Pl  (RED)
+                //8th point- N Lake Dr & E Newberry Blvd to N Lake Dr & E Park Pl  (RED)
                     coordinates={[
                         { latitude: 43.069428,  longitude: -87.872709 }, //point A-N Lake Dr & E Newberry Blvd 
                         { latitude: 43.067316,  longitude: -87.873403} // point B- E Park Pl & N Lake Dr
@@ -160,6 +155,134 @@ export const MapScreen = () => {
                 >
                 </Polyline> 
 
+
+                    {/*   
+
+                    BEGINNING OF
+                    1 through 10 points along N Lake Dr (GREEN)
+                    
+                    */}
+
+                <Polyline
+                // 1st point- E Edgewood Ave & N Lake Dr to N Lake Dr & E Newport Ave (GREEN)
+                coordinates={[
+                    { latitude: 43.081952, longitude: -87.872848 }, //point A- E Edgewood Ave & N Lake Dr
+                    { latitude: 43.079444,  longitude: -87.872573 }, //point B- N Lake Dr & E Newport Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+                 <Polyline
+                // 2nd point- N Lake Dr & E Newport Ave to N Lake Dr (GREEN)
+                    coordinates={[
+                        { latitude: 43.079444,  longitude: -87.872573 }, //point A- N Lake Dr & E Newport Ave
+                        { latitude: 43.078360,  longitude: -87.872449 } // point B- N Lake Dr
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                // 3rd point- N Lake Dr to N Lake Dr (GREEN)
+                    coordinates={[
+                        {  latitude: 43.078360,  longitude: -87.872449 }, //point A- N Lake Dr
+                        { latitude: 43.075989,  longitude: -87.872229} // point B- N Lake Dr
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                // 4th point- N Lake Dr to N Lake & N Lincoln Memorial Dr (GREEN)
+                    coordinates={[
+                        { latitude: 43.075989,  longitude: -87.872229}, //point A- N Lake Dr
+                        { latitude: 43.074577,  longitude: -87.872036 } // point B- N Lake Dr & N Lincoln Memorial Dr
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                //5th point- N Lake Dr to N Lake & N Lincoln Memorial Dr (GREEN)
+                    coordinates={[
+                        { latitude: 43.074577,  longitude: -87.872036 }, //point A- N Lake Dr & N Lincoln Memorial Dr
+                        { latitude: 43.074432,  longitude: -87.872001} // point B- N Lake Dr 
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+                
+
+                <Polyline
+                // 6th point- E Kenwood Blvd & N Lincoln Memorial Dr to N Lake Dr (GREEN)
+                    coordinates={[
+                        { latitude: 43.074432,  longitude: -87.872001}, //point A- E Kenwood Blvd & N Lincoln Memorial Dr
+                        { latitude: 43.071622,  longitude: -87.872299 } // point B- N Lake Dr
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>  
+
+
+                <Polyline
+                // 7th point- N Lake Dr to E Locust St & N Lake Dr (GREEN)
+                    coordinates={[
+                        { latitude: 43.071622,  longitude: -87.872299 }, //point A- N Lake Dr
+                        { latitude: 43.070931,  longitude: -87.872333 } // point B- E Locust St & N Lake Dr
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>  
+
+               <Polyline
+                // 8th point- E Locust St & N Lake Dr to N Lake Dr & E Newberry Blvd (GREEN)
+                    coordinates={[
+                        { latitude: 43.070931,  longitude: -87.872333}, //point A- N Lake Dr & N Lincoln Memorial Dr
+                        {  latitude: 43.069133,  longitude: -87.872887 } // point B- N Lake Dr & E Newberry Blvd 
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline> 
+
+               <Polyline
+                // 9th point- N Lake Dr & E Newberry Blvd to N Lake Dr (GREEN)
+                    coordinates={[
+                        {  latitude: 43.069133,  longitude: -87.872887}, //point A-N Lake Dr & E Newberry Blvd 
+                        { latitude: 43.067326,  longitude: -87.873455} // point B- N Lake Dr
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline> 
+
+                <Polyline
+                // 10th point- N Lake Dr to N Lake Dr & E Park Pl  (GREEN)
+                    coordinates={[
+                        {  latitude: 43.067326,  longitude: -87.873455}, //point A- N Lake Dr
+                        { latitude: 43.067280,  longitude: -87.873449} // point B- E Park Pl & N Lake Dr
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline> 
+                    {/*   
+
+                    END OF
+                    1 through 10 points along N Lake Dr (GREEN)
+                    
+                    */} 
 
 
                 <Polyline
@@ -259,7 +382,6 @@ export const MapScreen = () => {
                 </Polyline> 
 
 
-
                 <Polyline
                 // E North Ave & N Lake Dr to E Park Pl & N Lake Dr (GREEN)
                     coordinates={[
@@ -267,18 +389,6 @@ export const MapScreen = () => {
                         { latitude: 43.067315,  longitude: -87.873417 } // point B- E Park Pl & N Lake Dr
                     ]}
                     strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
-                    strokeWidth={4}
-                >
-                </Polyline> 
-
-
-                <Polyline
-                // N Lake Dr to N Lake Dr (RED)
-                    coordinates={[
-                        { latitude: 43.059989,  longitude: -87.880417}, //point A- E North Ave & N Lake Dr
-                        { latitude: 43.062409,  longitude: -87.878102} // point B- N Lake Dr
-                    ]}
-                    strokeColor="red" // fallback for when `strokeColors` is not supported by the map-provider
                     strokeWidth={4}
                 >
                 </Polyline> 
@@ -366,7 +476,7 @@ export const MapScreen = () => {
 
 
                 <Polyline
-                // E Belleview Pl & N Wahl Ave to N Wahl Ave (GREEN)
+                // 1st point- E Belleview Pl & N Wahl Ave to N Wahl Ave (GREEN)
                 coordinates={[
                     { latitude: 43.063801,  longitude: -87.873634}, //point A- E Belleview Pl & N Wahl Ave
                     { latitude: 43.064518,  longitude: -87.873037} // point B- N Wahl Ave
@@ -375,6 +485,10 @@ export const MapScreen = () => {
                     strokeWidth={4}
                 >
                 </Polyline> 
+
+
+
+
 
 
                 <Polyline
