@@ -43,6 +43,18 @@ export const MapScreen = () => {
 
 
                 <Polyline
+               // E Edgewood Ave & N Oakland Ave to N Oakland Ave & E North Ave   (GREEN)
+                    coordinates={[
+                        { latitude: 43.081901,  longitude: -87.887604 }, //point A- E Edgewood Ave & N Oakland Ave
+                        { latitude: 43.060105, longitude: -87.888062 } // point B- N Oakland Ave & E North Ave 
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
                 // E Edgewood Ave & N Lake Dr to N Lake Dr & E Newport Ave (GREEN)
                 coordinates={[
                     { latitude: 43.081952, longitude: -87.872848 }, //point A- E Edgewood Ave & N Lake Dr
@@ -53,13 +65,11 @@ export const MapScreen = () => {
                 >
                 </Polyline>
 
-
-
                 <Polyline
-                //1st point- Edgewood Ave & N Lake Dr to E Park Pl (RED)
-                    coordinates={[
-                        { latitude: 43.081919, longitude: -87.872767 }, //point A- E Edgewood Ave & N Lake Dr
-                        { latitude: 43.07895,  longitude: -87.872529 } // point B- Downer Woods & N Lake Dr
+                // E Edgewood Ave & N Lake Dr to N Lake Dr & E Newport Ave (RED)
+                coordinates={[
+                    { latitude: 43.081903, longitude: -87.872752}, //point A- E Edgewood Ave & N Lake Dr
+                    { latitude: 43.079442,  longitude: -87.872491 }, //point A- N Lake Dr & E Newport Ave
                     ]}
                     strokeColor="red" // fallback for when `strokeColors` is not supported by the map-provider
                     strokeWidth={4}
@@ -68,13 +78,10 @@ export const MapScreen = () => {
 
 
                  <Polyline
-                // 2nd point- Edgewood Ave & N Lake Dr to E Park Pl (RED)
+                // N Lake Dr & E Newport Ave & N Lake Dr to E Park Pl (RED)
                     coordinates={[
-                        { latitude: 43.07895, longitude: -87.872529}, //point A- Downer Woods & N Lake Dr
-                        { latitude: 43.067319,  longitude: -87.873385 } // point B- E Park Pl & N Lake Dr
-
-
-
+                        { latitude: 43.079442,  longitude: -87.872491 }, //point A- N Lake Dr & E Newport Ave
+                        { latitude: 43.067315,  longitude: -87.873417 } // point B- E Park Pl & N Lake Dr
                     ]}
                     strokeColor="red" // fallback for when `strokeColors` is not supported by the map-provider
                     strokeWidth={4}
@@ -119,7 +126,19 @@ export const MapScreen = () => {
 
 
                 <Polyline
-                // E North Ave & N Lake Dr to N Lake Dr (RED)
+                // E North Ave & N Lake Dr to E Park Pl & N Lake Dr (GREEN)
+                    coordinates={[
+                        { latitude: 43.060049,  longitude: -87.880461}, //point A- E North Ave & N Lake Dr
+                        { latitude: 43.067315,  longitude: -87.873417 } // point B- E Park Pl & N Lake Dr
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline> 
+
+
+                <Polyline
+                // N Lake Dr to N Lake Dr (RED)
                     coordinates={[
                         { latitude: 43.059989,  longitude: -87.880417}, //point A- E North Ave & N Lake Dr
                         { latitude: 43.062409,  longitude: -87.878102} // point B- N Lake Dr
@@ -270,7 +289,7 @@ export const MapScreen = () => {
 
 
                 <Polyline
-                // 5th point- N Wahl Ave to N Wahl Ave  & N Lake Dr (GREEN)
+                // 5th point- N Wahl Ave to N Wahl Ave & N Lake Dr (GREEN)
                 coordinates={[
                     { latitude: 43.067281,  longitude: -87.873299 }, //point A- N Wahl Ave
                     { latitude: 43.067319,  longitude: -87.873385 } // point B- N Wahl Ave & N Lake Dr
