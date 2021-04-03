@@ -645,13 +645,152 @@ export const MapScreen = () => {
 
 
                 
+                <Polyline
+               // E Park Pl to E Park Pl & N Lake Dr (GREEN)
+                coordinates={[
+                    { latitude: 43.067393,  longitude: -87.890998}, //point A- E Park Pl
+                    { latitude: 43.067321,  longitude: -87.873545 } // point B- E Park Pl & N Lake Dr
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+               // E Park Pl & N Newhall St to N Newhall St & E Webster Pl (GREEN)
+                coordinates={[
+                    { latitude: 43.067397,  longitude: -87.890416}, //point A- E Park Pl & N Newhall St
+                    { latitude: 43.064935,  longitude: -87.890403 } // point B- N Newhall St & E Webster Pl 
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+               // N Newhall St & E Webster Pl to N Newhall St (GREEN)
+                coordinates={[
+                    { latitude: 43.064935,  longitude: -87.890403}, //point A- N Newhall St & E Webster Pl 
+                    { latitude: 43.063759,  longitude: -87.890117 } // point B- N Newhall St 
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+               // N Newhall St to N Newhall St & E Bradford Ave (GREEN)
+                coordinates={[
+                    { latitude: 43.063759,  longitude: -87.890117}, //point A- N Newhall St 
+                    { latitude: 43.063654,  longitude: -87.878060 } // point B- N Newhall St & E Bradford Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+               // N Lake Dr & N Downer Ave to N Downer Ave & E Edgewood Ave (GREEN)
+                coordinates={[
+                    { latitude: 43.062485,  longitude: -87.878100}, //point A- N Lake Dr & N Downer Ave 
+                    { latitude: 43.081969,  longitude: -87.877718 } // point B- N Downer Ave & E Edgewood Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+               // E Kenwood Blvd & N Cambridge Ave to E Kenwood Blvd & N Maryland Ave (GREEN)
+                coordinates={[
+                    { latitude: 43.074699,  longitude: -87.891543}, //point A- E Kenwood Blvd & N Cambridge Ave
+                    { latitude: 43.074652,  longitude: -87.882841 } // point B- E Kenwood Blvd & N Maryland Ave 
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+               // E Kenwood Blvd & N Maryland Ave to E Kenwood Blvd & N Lake Dr (GREEN)
+                coordinates={[
+                    { latitude: 43.074652,  longitude: -87.882841}, //point A- E Kenwood Blvd & N Maryland Ave 
+                    { latitude: 43.074652,  longitude: -87.872053 } // point B- E Kenwood Blvd & N Lake Dr 
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+               // N Newhall St & E Webster Pl to E Webster Pl & N Bartlett Ave (GREEN)
+                coordinates={[
+                    { latitude: 43.064968,  longitude: -87.890418 }, //point A- N Newhall St & E Webster Pl 
+                    { latitude: 43.064959,  longitude: -87.889232 } // point B- E Webster Pl & N Bartlett Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+               //  N Bartlett Ave & East Riverside Pl to N Bartlett Ave & E Thomas Ave (GREEN)
+                coordinates={[
+                    { latitude: 43.068785,  longitude: -87.889175 }, //point A- N Bartlett Ave & East Riverside Pl 
+                    { latitude: 43.061209,  longitude: -87.889301} // point B- N Bartlett Ave & E Thomas Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+               //  N Bartlett Ave & East Riverside Pl to East Riverside Pl & N Oakland Ave (GREEN)
+                coordinates={[
+                    {  latitude: 43.068785,  longitude: -87.889175 }, //point A- N Bartlett Ave & East Riverside Pl 
+                    { latitude: 43.068783,  longitude: -87.887902} // point B- East Riverside Pl & N Oakland Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+               //  N Bartlett Ave & E North Ave to N Bartlett Ave & E North Ave (GREEN)
+                coordinates={[
+                    { latitude: 43.060164,  longitude: -87.889322}, //point A- N Bartlett Ave & E North Ave 
+                    { latitude: 43.060714,  longitude: -87.889339} // point B- N Bartlett Ave & E North Ave 
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+               //  N Newhall St & E North Ave to E North Ave & N Lake Dr (GREEN)
+                coordinates={[
+                    { latitude: 43.060152,  longitude: -87.890488}, //point A- N Newhall St & E North Ave 
+                    { latitude: 43.060096,  longitude: -87.880444} // point B- E North Ave & N Lake Dr
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
 
 
 
 
-
-
-                
         </MapView> 
 
     )
