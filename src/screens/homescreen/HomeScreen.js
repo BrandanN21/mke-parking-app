@@ -11,8 +11,22 @@ import ReactDom from "react-dom";
 
 
 export const HomeScreen = ({ navigation }) => {
-  const [count, setCount] = React.useState(0)
-  
+  const [duration, setDuration] = React.useState(10);
+  const [isPlaying, setIsPlaying] = React.useState(false);
+
+  const onPressChangeTime = () => {
+    setIsPlaying(true)
+    setDuration(7200)
+  }
+  const onPressChangeTimeTwo = () => {
+    setIsPlaying(true)
+    setDuration(3600)
+  }
+  const onPressChangeTimeThree = () => {
+    setIsPlaying(true)
+    setDuration(10800)
+  }
+
 //below are the two constants that declare the time formatting as well as the return statement that shows them
   const formatRemainingTime = time => {
     const hours = Math.floor(time / 3600);
@@ -25,7 +39,8 @@ export const HomeScreen = ({ navigation }) => {
 
   const renderTime = ({ remainingTime }) => {
     if (remainingTime === 0) {
-      return <View style={styles.timer}><Text>Time over.....</Text></View>;
+      return <View style={styles.timer}><Text style={styles.completeText}>Time over.....</Text></View>;
+      
     }
   
 
@@ -55,10 +70,11 @@ export const HomeScreen = ({ navigation }) => {
               
               <View style={styles.timercontainer}>
               <CountdownCircleTimer 
+                key={duration}
               //here is the boolean for if the button should start or not
-                isPlaying={true}
+                isPlaying={isPlaying}
                 //here is the starting time for button
-                duration={300}
+                duration={duration}
                 colors={[
                   ['#18224B', 0.33],
                   ['#009DD9', 0.33],
@@ -77,26 +93,8 @@ export const HomeScreen = ({ navigation }) => {
 
 
               </View>
+            
 
-              <View style={styles.dropdownstyles}>
-                <DropDownPicker
-                //these are the initial values for the drop down menu along with the time in minutes
-                  items={[
-                    { label: '2 hours', value: '120' },
-                    { label: '3 hours', value: '180' },
-                    { label: '4 hours', value: '240' }
-                  ]}
-                  placeholder="Select your parking time"
-                  containerStyle={{width: 200, height: 40}}
-                  
-                  style={{backgroundColor: '#ffffff'}}
-                  dropDownStyle={{ backgroundColor: 'white' }}
-
-
-
-
-                />
-              </View>
               <View style={styles.textcontainer}>
                 <Text style={styles.mainText}>
                 Avoid parking tickets with NoTic MKE. A parking solution for East Side Drivers
@@ -105,12 +103,25 @@ export const HomeScreen = ({ navigation }) => {
 
 
               </View>
-              <View>
-                <Button title="Start Timer">
+              
+             
+              <View style={styles.buttons}>
+                <Button style={styles.button1}
+                  onPress={onPressChangeTimeTwo}
+                  title="1 hour"
+                  color="#FFAC36"
+                />
+                <Button style={styles.button2}
+                  onPress={onPressChangeTime}
+                  title="2 hours"
+                  color="#FFAC36"
+                />
+                <Button style={styles.button3}
+                  onPress={onPressChangeTimeThree}
+                  title="3 hours"
+                  color="#FFAC36"
+                />
                   
-
-                </Button>
-
               </View>
             </ImageBackground>
             
@@ -118,7 +129,7 @@ export const HomeScreen = ({ navigation }) => {
     )
 }
 
-
+//Styles for the above code
 const styles = StyleSheet.create({
     container: {
       flex: 1,
@@ -187,7 +198,20 @@ const styles = StyleSheet.create({
       textAlign: 'center',
       
 
-    }
+    },
+    completeText: {
+      color: '#34eb7d',
+      fontSize: 50,
+      textAlign: 'center'
+    },
+    buttons: {
+      flexDirection: 'row',
+      justifyContent: 'center',
+      alignContent: 'center',
+    },
+    
+
+    
     
   });
         
