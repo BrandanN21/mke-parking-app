@@ -22,7 +22,7 @@ export const MapScreen = () => {
                // N Oakland Ave & E Edgewood Ave to N Lake Dr & E Edgewood Ave(RED)
                     coordinates={[
                         { latitude: 43.081901,  longitude: -87.887604 }, //point A- E Edgewood Ave & N Oakland Ave
-                        { latitude: 43.081899, longitude: -87.872835 } // point B- E Edgewood Ave & N Lake Dr 
+                        { latitude: 43.081910, longitude: -87.872780 } // point B- E Edgewood Ave & N Lake Dr 
                     ]}
                     strokeColor="red" // fallback for when `strokeColors` is not supported by the map-provider
                     strokeWidth={4}
@@ -34,7 +34,7 @@ export const MapScreen = () => {
                 // E Edgewood Ave & N Lake Dr to E Edgewood Ave & N Oakland Ave (GREEN)
                 coordinates={[
                     { latitude: 43.081952, longitude: -87.872848 }, //point A- E Edgewood Ave & N Lake Dr
-                    { latitude: 43.081979,  longitude: -87.887604 }, //point A- E Edgewood Ave & N Oakland Ave
+                    { latitude: 43.081979,  longitude: -87.887604 }, //point B- E Edgewood Ave & N Oakland Ave
                     ]}
                     strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
                     strokeWidth={4}
@@ -43,7 +43,7 @@ export const MapScreen = () => {
 
 
                 <Polyline
-               // E Edgewood Ave & N Oakland Ave to N Oakland Ave & E North Ave   (GREEN)
+               // E Edgewood Ave & N Oakland Ave to N Oakland Ave & E North Ave (GREEN)
                     coordinates={[
                         { latitude: 43.081901,  longitude: -87.887604 }, //point A- E Edgewood Ave & N Oakland Ave
                         { latitude: 43.060105, longitude: -87.888062 } // point B- N Oakland Ave & E North Ave 
@@ -58,7 +58,7 @@ export const MapScreen = () => {
                 // E Edgewood Ave & N Lake Dr to N Lake Dr & E Newport Ave (GREEN)
                 coordinates={[
                     { latitude: 43.081952, longitude: -87.872848 }, //point A- E Edgewood Ave & N Lake Dr
-                    { latitude: 43.079444,  longitude: -87.872573 }, //point A- N Lake Dr & E Newport Ave
+                    { latitude: 43.079444,  longitude: -87.872573 }, //point B- N Lake Dr & E Newport Ave
                     ]}
                     strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
                     strokeWidth={4}
@@ -68,8 +68,8 @@ export const MapScreen = () => {
                 <Polyline
                 // E Edgewood Ave & N Lake Dr to N Lake Dr & E Newport Ave (RED)
                 coordinates={[
-                    { latitude: 43.081903, longitude: -87.872752}, //point A- E Edgewood Ave & N Lake Dr
-                    { latitude: 43.079442,  longitude: -87.872491 }, //point A- N Lake Dr & E Newport Ave
+                    { latitude: 43.081921, longitude: -87.872786}, //point A- E Edgewood Ave & N Lake Dr
+                    { latitude: 43.079442,  longitude: -87.872491 }, //point B- N Lake Dr & E Newport Ave
                     ]}
                     strokeColor="red" // fallback for when `strokeColors` is not supported by the map-provider
                     strokeWidth={4}
@@ -78,10 +78,10 @@ export const MapScreen = () => {
 
 
                  <Polyline
-                // N Lake Dr & E Newport Ave & N Lake Dr to E Park Pl (RED)
+                // N Lake Dr & E Newport Ave to N Lake Dr (RED)
                     coordinates={[
                         { latitude: 43.079442,  longitude: -87.872491 }, //point A- N Lake Dr & E Newport Ave
-                        { latitude: 43.067315,  longitude: -87.873417 } // point B- E Park Pl & N Lake Dr
+                        { latitude: 43.078333,  longitude: -87.87235 } // point B- N Lake Dr
                     ]}
                     strokeColor="red" // fallback for when `strokeColors` is not supported by the map-provider
                     strokeWidth={4}
@@ -90,7 +90,80 @@ export const MapScreen = () => {
 
 
                 <Polyline
-                // Locust Street & N Lake Dr to N Cambridge Ave (RED)
+                // N Lake Dr to N Lake Dr (RED)
+                    coordinates={[
+                        { latitude: 43.078333,  longitude: -87.87235 }, //point A- N Lake Dr
+                        { latitude: 43.076171,  longitude: -87.872067 } // point B- N Lake Dr
+                    ]}
+                    strokeColor="red" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                // N Lake Dr to N Lake & N Lincoln Memorial Dr(RED)
+                    coordinates={[
+                        { latitude: 43.076171,  longitude: -87.872067 }, //point A- N Lake Dr
+                        { latitude: 43.074531,  longitude: -87.871843 } // point B- N Lake Dr & N Lincoln Memorial Dr
+                    ]}
+                    strokeColor="red" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                // N Lake Dr to N Lake & N Lincoln Memorial Dr(RED)
+                    coordinates={[
+                        { latitude: 43.074531,  longitude: -87.871843 }, //point A- N Lake Dr & N Lincoln Memorial Dr
+                        {latitude: 43.074418,  longitude: -87.871924} // point B- N Lake Dr 
+                    ]}
+                    strokeColor="red" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+                
+
+             <Polyline
+                // E Kenwood Blvd & N Lincoln Memorial Dr to E Locust St & N Lake Dr (RED)
+                    coordinates={[
+                        { latitude: 43.074418,  longitude: -87.871924}, //point A- E Kenwood Blvd & N Lincoln Memorial Dr
+                        { latitude: 43.070939,  longitude: -87.872291 } // point B- E Locust St & N Lake Dr
+                    ]}
+                    strokeColor="red" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>  
+
+
+                <Polyline
+                // N Lake Dr & N Lincoln Memorial Dr to N Lake Dr & E Newberry Blvd (RED)
+                    coordinates={[
+                        { latitude: 43.070945, longitude: -87.872268}, //point A- N Lake Dr & N Lincoln Memorial Dr
+                        { latitude: 43.069428,  longitude: -87.872709 } // point B- N Lake Dr & E Newberry Blvd 
+                    ]}
+                    strokeColor="red" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+               <Polyline
+                // N Lake Dr & E Newberry Blvd to N Lake Dr & E Park Pl  (RED)
+                    coordinates={[
+                        { latitude: 43.069428,  longitude: -87.872709 }, //point A-N Lake Dr & E Newberry Blvd 
+                        { latitude: 43.067316,  longitude: -87.873403} // point B- E Park Pl & N Lake Dr
+                    ]}
+                    strokeColor="red" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline> 
+
+
+
+                <Polyline
+                // E Locust Street & N Lake Dr to N Cambridge Ave (RED)
                     coordinates={[
                         { latitude: 43.070945, longitude: -87.872268}, //point A- E Locust Street
                         { latitude: 43.071064,  longitude: -87.891480 } // point B- N Cambridge Ave 
@@ -114,6 +187,67 @@ export const MapScreen = () => {
 
 
                 <Polyline
+                // N Maryland Ave & N Farwell Ave to N Maryland Ave & N Prospect Ave (RED)
+                    coordinates={[
+                        { latitude: 43.062496,  longitude: -87.883044 }, //point A- N Maryland Ave & N Farwell Ave
+                        { latitude: 43.060995,  longitude: -87.883033 } // point B- N Maryland Ave & N Prospect Ave
+                    ]}
+                    strokeColor="red" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline> 
+
+
+                <Polyline
+                // N Maryland Ave & E Kenwood Blvd to N Maryland Ave & N Prospect Ave (GREEN)
+                    coordinates={[
+                        { latitude: 43.074517,  longitude: -87.882917 }, //point A- N Maryland Ave & E Kenwood Blvd 
+                        { latitude: 43.060826,  longitude: -87.883146 } // point B- N Maryland Ave & N Prospect Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline> 
+
+
+
+                <Polyline
+                // N Maryland Ave & E Kenwood Blvd to N Maryland Ave & E Edgewood Ave (GREEN)
+                    coordinates={[
+                        { latitude: 43.074517,  longitude: -87.882917 }, //point A- N Maryland Ave & E Kenwood Blvd 
+                        { latitude: 43.081903,  longitude: -87.882727 } // point B- N Maryland Ave & E Edgewood Ave 
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline> 
+
+
+                <Polyline
+                // N Maryland Ave & E Kenwood Blvd to N Maryland Ave & E Edgewood Ave (RED)
+                    coordinates={[
+                        { latitude: 43.074558,  longitude: -87.882849 }, //point A- N Maryland Ave & E Kenwood Blvd 
+                        { latitude: 43.081902,  longitude: -87.882647 } // point B- N Maryland Ave & E Edgewood Ave 
+                    ]}
+                    strokeColor="red" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline> 
+
+
+                <Polyline
+                // N Maryland Ave & E Kenwood Blvd to E Kenwood Blvd & N Lincoln Memorial Dr (RED)
+                    coordinates={[
+                        { latitude: 43.074558,  longitude: -87.882849 }, //point A- N Maryland Ave & E Kenwood Blvd 
+                        { latitude: 43.074595,  longitude: -87.872151 } // point B- E Kenwood Blvd & N Lincoln Memorial Dr
+                    ]}
+                    strokeColor="red" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline> 
+
+
+                <Polyline
                 // E North Ave & N Lake Dr to N Lake Dr (RED)
                     coordinates={[
                         { latitude: 43.060090,  longitude: -87.88116}, //point A- E North Ave & N Lake Dr
@@ -123,6 +257,7 @@ export const MapScreen = () => {
                     strokeWidth={4}
                 >
                 </Polyline> 
+
 
 
                 <Polyline
