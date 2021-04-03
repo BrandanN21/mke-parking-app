@@ -11,9 +11,11 @@ import ReactDom from "react-dom";
 
 
 export const HomeScreen = ({ navigation }) => {
-  const [duration, setDuration] = React.useState(10);
+  const [duration, setDuration] = React.useState(36000);
   const [isPlaying, setIsPlaying] = React.useState(false);
 
+
+  //here is the functions for the time changing buttons
   const onPressChangeTime = () => {
     setIsPlaying(true)
     setDuration(7200)
@@ -27,6 +29,14 @@ export const HomeScreen = ({ navigation }) => {
     setDuration(10800)
   }
 
+  // here is the functions for play/pause buttons
+  const onPressChangeTimePause = () => {
+    setIsPlaying(false)
+  }
+  const onPressChangeTimeResume = () => {
+    setIsPlaying(true)
+  }
+
 //below are the two constants that declare the time formatting as well as the return statement that shows them
   const formatRemainingTime = time => {
     const hours = Math.floor(time / 3600);
@@ -36,14 +46,16 @@ export const HomeScreen = ({ navigation }) => {
     return `${hours}:${minutes}:${seconds}`;
 
   }
-
+// here is the function that displays text when timer is done
   const renderTime = ({ remainingTime }) => {
     if (remainingTime === 0) {
       return <View style={styles.timer}><Text style={styles.completeText}>Time over.....</Text></View>;
-      
+    }
+    if (remainingTime === 36000) {
+      return <View style={styles.timer}><Text style={styles.completeText}>Select desired parking time</Text></View>;
     }
   
-
+// here is the child element that displays the new time format 
   return (
     <View style={styles.timer}>
       <View style={styles.textRemaining}><Text style={styles.textRemaining2}>Remaining Time</Text></View>
@@ -71,7 +83,7 @@ export const HomeScreen = ({ navigation }) => {
               <View style={styles.timercontainer}>
               <CountdownCircleTimer 
                 key={duration}
-              //here is the boolean for if the button should start or not
+              //here is the boolean for if the button should start or not 
                 isPlaying={isPlaying}
                 //here is the starting time for button
                 duration={duration}
@@ -81,10 +93,12 @@ export const HomeScreen = ({ navigation }) => {
                 ]}
                 size={342}
                 isLinearGradient="true"
-                
+                // here is the code for how long the timer waits before resetting after finishing countdown in (ms)
                 onComplete={() => {
                   console.log('ON_COMPLETE BEFORE RETURN')
-                  return [true, 0]
+                  
+                  
+                  return [true, 200000]
                 }}
               >
                 {renderTime}
@@ -103,25 +117,38 @@ export const HomeScreen = ({ navigation }) => {
 
 
               </View>
-              
-             
+
+                          
               <View style={styles.buttons}>
-                <Button style={styles.button1}
+                <Button 
                   onPress={onPressChangeTimeTwo}
                   title="1 hour"
                   color="#FFAC36"
                 />
-                <Button style={styles.button2}
+                <Button 
                   onPress={onPressChangeTime}
                   title="2 hours"
                   color="#FFAC36"
                 />
-                <Button style={styles.button3}
+                <Button 
                   onPress={onPressChangeTimeThree}
                   title="3 hours"
                   color="#FFAC36"
                 />
                   
+              </View>
+              
+              <View style={styles.buttonopt}>
+                <Button 
+                  onPress={onPressChangeTimeResume}
+                  title="Play Timer"
+                  color="#FFAC36"
+                />
+                <Button 
+                  onPress={onPressChangeTimePause}
+                  title="Pause Timer"
+                  color="#FFAC36"
+                />
               </View>
             </ImageBackground>
             
@@ -158,6 +185,7 @@ const styles = StyleSheet.create({
       height: '100%',
       flex: 1,
     }, 
+    //styles for the main bio text of app
     mainText: {
       color: 'white',
       fontSize: 20,
@@ -178,20 +206,14 @@ const styles = StyleSheet.create({
       marginRight: '10%',
       marginTop: '10%'
     },
-    dropdownstyles: {
-      justifyContent: 'center',
-      alignContent: 'center',
-      paddingLeft: '25%'
-      
-
-
-    },
+    // styles for the text above numbers in clock
     textRemaining2: {
       color: '#FFAC36',
       fontSize: 25,
       textAlign: 'center',
       
     },
+    //styles for the time remaining displayed
     valueTime2: {
       color: '#FFAC36',
       fontSize: 50,
@@ -199,12 +221,20 @@ const styles = StyleSheet.create({
       
 
     },
+    //styles for the time over text 
     completeText: {
-      color: '#34eb7d',
+      color: '#FFAC36',
       fontSize: 50,
       textAlign: 'center'
     },
+    //styles for view container of time buttons
     buttons: {
+      flexDirection: 'row',
+      justifyContent: 'center',
+      alignContent: 'center',
+    },
+    //styles for view container of play pause buttons
+    buttonopt: {
       flexDirection: 'row',
       justifyContent: 'center',
       alignContent: 'center',
