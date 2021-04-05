@@ -76,14 +76,14 @@ export const HomeScreen = ({ navigation }) => {
  
     return (
       <View style={styles.container}>
-            <ImageBackground source={require('../../.././assets/home-screen.png')}
+            <ImageBackground source={require('../../.././assets/timer-background.png')}
             style={styles.background}
             >
               
               <View style={styles.timercontainer}>
               <CountdownCircleTimer 
                 key={duration}
-              //here is the boolean for if the button should start or not 
+                //here is the boolean for if the button should start or not 
                 isPlaying={isPlaying}
                 //here is the starting time for button
                 duration={duration}
@@ -91,7 +91,7 @@ export const HomeScreen = ({ navigation }) => {
                   ['#18224B', 0.33],
                   ['#009DD9', 0.33],
                 ]}
-                size={342}
+                size={325}
                 isLinearGradient="true"
                 // here is the code for how long the timer waits before resetting after finishing countdown in (ms)
                 onComplete={() => {
@@ -111,45 +111,55 @@ export const HomeScreen = ({ navigation }) => {
 
               <View style={styles.textcontainer}>
                 <Text style={styles.mainText}>
-                Avoid parking tickets with NoTic MKE. A parking solution for East Side Drivers
-
+                Please select a parking time limit. 
+                You will be notified 15 minutes before your parking time is expired.
                 </Text>
-
-
               </View>
 
-                          
-              <View style={styles.buttons}>
-                <Button 
-                  onPress={onPressChangeTimeTwo}
-                  title="1 hour"
-                  color="#FFAC36"
-                />
-                <Button 
-                  onPress={onPressChangeTime}
-                  title="2 hours"
-                  color="#FFAC36"
-                />
-                <Button 
-                  onPress={onPressChangeTimeThree}
-                  title="3 hours"
-                  color="#FFAC36"
-                />
-                  
-              </View>
-              
               <View style={styles.buttonopt}>
-                <Button 
+                <TouchableOpacity style={styles.btnTime}
                   onPress={onPressChangeTimeResume}
                   title="Play Timer"
                   color="#FFAC36"
-                />
-                <Button 
+                >
+                  <Text>START</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.btnTime}
                   onPress={onPressChangeTimePause}
                   title="Pause Timer"
                   color="#FFAC36"
-                />
+                >
+                  <Text>PAUSE</Text>
+                </TouchableOpacity>
               </View>
+                
+
+              <View style={styles.buttons}>
+                <TouchableOpacity style={styles.btnTime}
+                  onPress={onPressChangeTimeTwo}
+                  title="1 hour"
+                  color="#FFAC36"
+                >
+                  <Text>1 Hour</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.btnTime}
+                  onPress={onPressChangeTime}
+                  title="2 hours"
+                  color="#FFAC36"
+                >
+                  <Text>2 Hours</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.btnTime} 
+                  onPress={onPressChangeTimeThree}
+                  title="3 hours"
+                  color="#FFAC36"
+                >
+                  <Text>3 Hours</Text>
+                </TouchableOpacity>
+                  
+              </View>
+              
+              
             </ImageBackground>
             
       </View>
@@ -171,25 +181,31 @@ const styles = StyleSheet.create({
     timercontainer: {
       justifyContent: 'center',
       alignItems: 'center',
-      paddingTop: '50%',
+      top: '30%',
 
 
     },
     remainingTime: {
       fontSize: 46,
       color: '#FFAC36',
+      
     },
     
     background: {
       width: '100%',
       height: '100%',
       flex: 1,
+      
     }, 
     //styles for the main bio text of app
     mainText: {
       color: 'white',
       fontSize: 20,
-      marginTop: '35%',
+      marginTop: '65%',
+      marginBottom: '3%',
+      marginRight: '5%',
+      marginLeft: '5%',
+      textAlign: 'center'
     },
     startText: {
       textAlign: 'center',
@@ -208,7 +224,7 @@ const styles = StyleSheet.create({
     },
     // styles for the text above numbers in clock
     textRemaining2: {
-      color: '#FFAC36',
+      color: '#0f2240', //#FFAC36
       fontSize: 25,
       textAlign: 'center',
       
@@ -230,16 +246,24 @@ const styles = StyleSheet.create({
     //styles for view container of time buttons
     buttons: {
       flexDirection: 'row',
-      justifyContent: 'center',
+      justifyContent: 'space-between',
       alignContent: 'center',
+      paddingVertical: 15,
+      paddingHorizontal: 10
     },
     //styles for view container of play pause buttons
     buttonopt: {
       flexDirection: 'row',
-      justifyContent: 'center',
+      justifyContent: 'space-around',
       alignContent: 'center',
+      paddingVertical: 15
     },
-    
+    btnTime: {
+      backgroundColor: '#FFF',
+      borderRadius: 25,
+      paddingHorizontal: 25,
+      paddingVertical: 12
+    }
 
     
     
