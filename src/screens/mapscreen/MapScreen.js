@@ -226,10 +226,10 @@ export const MapScreen = () => {
 
 
                 <Polyline
-                //  E Hampshire St & N Cambridge Ave to E Hampshire St & N Cramer St (GREEN)
+                //  1st point- E Hampshire St & N Cramer St to E Hampshire St & N Newhall St (GREEN)
                 coordinates={[
-                    { latitude: 43.0, longitude: -87.8 }, //point A- E Hampshire St & N Cambridge Ave 
-                    { latitude: 43.075643, longitude: -87.886605 }, //point B- E Hampshire St & N Cramer St
+                    { latitude: 43.075643, longitude: -87.886605 }, //point A- E Hampshire St & N Cramer St
+                    { latitude: 43.075681, longitude: -87.890236 }, //point B- E Hampshire St & N Newhall St
                     ]}
                     strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
                     strokeWidth={4}
@@ -237,12 +237,83 @@ export const MapScreen = () => {
                 </Polyline>
 
 
+                <Polyline
+                // 2nd point- E Hampshire St & N Newhall St to E Hampshire St (GREEN)
+                coordinates={[
+                    { latitude: 43.075681, longitude: -87.890236 }, //point A- E Hampshire St & N Newhall St
+                    { latitude: 43.075781, longitude: -87.890818 }, //point B- E Hampshire St
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                // 3rd point- E Hampshire St to E Hampshire St & N Cambridge Ave  (GREEN)
+                coordinates={[
+                    { latitude: 43.075681, longitude: -87.890236 }, //point A- E Hampshire St 
+                    { latitude: 43.075812, longitude: -87.891501 }, //point B- E Hampshire St & N Cambridge Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                //  E Newport Ave & N Cambridge Ave to E Newport Ave & N Maryland Ave (GREEN)
+                coordinates={[
+                    { latitude: 43.079467, longitude: -87.891227 }, //point A- E Newport Ave & N Cambridge Ave
+                    { latitude: 43.079425, longitude: -87.882768  }, //point B- E Newport Ave & N Maryland Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                //  E Providence Ave & N Cambridge Ave to E Providence Ave & N Oakland Ave (GREEN)
+                coordinates={[
+                    { latitude: 43.081481, longitude: -87.890600 }, //point A- E Providence Ave & N Cambridge Ave
+                    { latitude: 43.081472, longitude: -87.887675 }, //point B- E Providence Ave & N Oakland Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                // N Summit Ave & N Downer Ave to N Summit Ave & E Park Pl (GREEN)
+                coordinates={[
+                    { latitude: 43.064381, longitude: -87.878058 }, //point A- N Summit Ave & N Downer Ave 
+                    { latitude: 43.067320, longitude: -87.875104 }, //point B- N Summit Ave & E Park Pl
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                // N Hackett Ave & N Downer Ave to N Hackett Ave & E Park Pl (GREEN)
+                coordinates={[
+                    { latitude: 43.066072, longitude: -87.878005 }, //point A- N Hackett Ave & N Downer Ave 
+                    { latitude: 43.067336, longitude: -87.876881 }, //point B- N Hackett Ave & E Park Pl
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+
                 {/* 
                 Added these points
 
                  */}
-
-
 
 
 
