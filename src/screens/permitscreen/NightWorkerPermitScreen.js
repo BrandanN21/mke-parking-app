@@ -9,14 +9,11 @@ export default function NightWorkerPermitScreen({ navigation }) {
             <Text style={styles.header}> Milwaukee</Text>
             <Text style={styles.header}> Night Worker Permits</Text>
             <Text style={styles.text}>
-            rem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor pretium turpis ut semper. 
-            Quisque laoreet ut nibh at eleifend. 
-            Sed imperdiet, erat vel euismod interdum, tellus libero fermentum tortor, vel tempus erat est id purus. 
-            Etiam felis urna, pellentesque id dictum sit amet, consectetur molestie mi.
+            Night workers who are not provided off-street parking by their employers.
+            No Cost
             </Text>
             <Text style={styles.text}>
-            Sed imperdiet, erat vel euismod interdum, tellus libero fermentum tortor, vel tempus erat est id purus. 
-            Etiam felis urna, pellentesque id dictum sit amet, consectetur molestie mi.
+            Available Online and in person at Violations Bureaus.
             </Text>
             <Text style={styles.text}>
             You can login/create an account for the City of Milwaukee Parking below.

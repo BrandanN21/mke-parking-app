@@ -9,14 +9,13 @@ export default function NonconformingPermitScreen({ navigation }) {
             <Text style={styles.header}> Milwaukee Residential</Text>
             <Text style={styles.header}>  Non-conforming Permits</Text>
             <Text style={styles.text}>
-            rem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor pretium turpis ut semper. 
-            Quisque laoreet ut nibh at eleifend. 
-            Sed imperdiet, erat vel euismod interdum, tellus libero fermentum tortor, vel tempus erat est id purus. 
-            Etiam felis urna, pellentesque id dictum sit amet, consectetur molestie mi.
+            Residents living in houses built prior to October 27, 1970 and a minimum of one parking space per dwelling unit is not provided
+            Valid Wisconsin driver's license with the same address as on the application or a valid Wisconsin driver's license and a utility bill with the same address on the application.
             </Text>
             <Text style={styles.text}>
-            Sed imperdiet, erat vel euismod interdum, tellus libero fermentum tortor, vel tempus erat est id purus. 
-            Etiam felis urna, pellentesque id dictum sit amet, consectetur molestie mi.
+            Vehicle must have valid Wisconsin license plates, registration form must be brought to Violations Bureau location.
+            1 permit per residence
+            $15 per year
             </Text>
             <Text style={styles.text}>
             You can login/create an account for the City of Milwaukee Parking below.

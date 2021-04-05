@@ -9,14 +9,11 @@ export default function DisabledNightPermitScreen({ navigation }) {
             <Text style={styles.header}> Milwaukee</Text>
             <Text style={styles.header}> Disabled Night Permits</Text>
             <Text style={styles.text}>
-            rem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor pretium turpis ut semper. 
-            Quisque laoreet ut nibh at eleifend. 
-            Sed imperdiet, erat vel euismod interdum, tellus libero fermentum tortor, vel tempus erat est id purus. 
-            Etiam felis urna, pellentesque id dictum sit amet, consectetur molestie mi.
+            A no cost Special Disabled Night Permit is required in addition to the state issued disabled parking identification card to 
+            park on City Streets between the hours of 2:00 a.m and 6:00 a.m. Monday through Saturday. 
             </Text>
             <Text style={styles.text}>
-            Sed imperdiet, erat vel euismod interdum, tellus libero fermentum tortor, vel tempus erat est id purus. 
-            Etiam felis urna, pellentesque id dictum sit amet, consectetur molestie mi.
+            Available Online and in person at Violations Bureaus.
             </Text>
             <Text style={styles.text}>
             You can login/create an account for the City of Milwaukee Parking below.

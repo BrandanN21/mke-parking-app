@@ -7,16 +7,15 @@ export default function CommuterPermitScreen({ navigation }) {
     return (
         <View style={styles.container}>
             <Text style={styles.header}> Milwaukee Residential</Text>
-            <Text style={styles.header}>  Commuter Impacted Permits</Text>
+            <Text style={styles.header}> Commuter Impacted Permits</Text>
             <Text style={styles.text}>
-            rem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor pretium turpis ut semper. 
-            Quisque laoreet ut nibh at eleifend. 
-            Sed imperdiet, erat vel euismod interdum, tellus libero fermentum tortor, vel tempus erat est id purus. 
-            Etiam felis urna, pellentesque id dictum sit amet, consectetur molestie mi.
+            Applies to specific locations designated as "Commuter Impacted" by the Common Council. 
+            These areas are generally located near factories, schools, hospitals or large employment centers.
             </Text>
             <Text style={styles.text}>
-            Sed imperdiet, erat vel euismod interdum, tellus libero fermentum tortor, vel tempus erat est id purus. 
-            Etiam felis urna, pellentesque id dictum sit amet, consectetur molestie mi.
+            Valid Wisconsin driver's license with the same address as on the application or a valid Wisconsin driver's license and a utility bill with the same address on the application.
+            Vehicle must have valid Wisconsin license plates. If applying in person, registration form must be brought to Violations Bureau location.
+            No Cost
             </Text>
             <Text style={styles.text}>
             You can login/create an account for the City of Milwaukee Parking below.
