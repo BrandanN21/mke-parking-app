@@ -1,11 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import { StyleSheet, Text, View, ImageBackground, TouchableOpacity, Touchable, Animated, TextInput, Button } from 'react-native';
 import { CountdownCircleTimer } from 'react-native-countdown-circle-timer';
-import Constants from 'expo-constants';
-import { render } from 'react-dom';
-import DropDownPicker from 'react-native-dropdown-picker';
-import ReactDom from "react-dom";
-
 
 
 
