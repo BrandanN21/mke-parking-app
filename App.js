@@ -37,16 +37,16 @@ const Tab = createBottomTabNavigator();
             // this allows use to dynamically change the icon based on the name of the route
             let iconName;
             if (route.name === 'Home') {
-              iconName = focused ? 'home' : 'home';
+              iconName = focused ? 'timer-outline' : 'timer-outline';
             } else if (route.name === 'Map') {
-              iconName = focused ? 'map-marker' : 'map-marker';
+              iconName = focused ? 'map-outline' : 'map-outline';
             } else if (route.name === 'Account') {
-              iconName = focused ? 'user' : 'user';
+              iconName = focused ? 'settings-outline' : 'settings-outline';
             } else if (route.name === 'Permits') {
-              iconName = focused ? 'clipboard' : 'clipboard';
+              iconName = focused ? 'md-clipboard-outline' : 'md-clipboard-outline';
             }
             // You can return any component that you like here!
-            return <FontAwesome name={iconName} size={size} color={color} />;
+            return <Ionicons name={iconName} size={size} color={color} />;
             
           },
         })}
