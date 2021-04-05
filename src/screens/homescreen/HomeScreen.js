@@ -44,7 +44,7 @@ export const HomeScreen = ({ navigation }) => {
 // here is the function that displays text when timer is done, as well as the start text telling user to select a time
   const renderTime = ({ remainingTime }) => {
     if (remainingTime === 0) {
-      return <View style={styles.timer}><Text style={styles.completeText}>Time over.....</Text></View>;
+      return <View style={styles.timer}><Text style={styles.completeText}>Time over...</Text></View>;
     }
     if (remainingTime === 36000) {
       return <View style={styles.timer}><Text style={styles.completeText}>Select desired parking time</Text></View>;
@@ -235,7 +235,7 @@ const styles = StyleSheet.create({
     //styles for the time over text 
     completeText: {
       color: '#FFAC36',
-      fontSize: 50,
+      fontSize: 40,
       textAlign: 'center'
     },
     //styles for view container of time buttons

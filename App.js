@@ -2,7 +2,7 @@
 import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { FontAwesome } from '@expo/vector-icons';
+import { Ionicons } from '@expo/vector-icons';
 import { createStackNavigator } from '@react-navigation/stack';
 import { StyleSheet, Text, View, ImageBackground, TouchableOpacity, Touchable } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
