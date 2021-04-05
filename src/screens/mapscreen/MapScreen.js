@@ -309,9 +309,123 @@ export const MapScreen = () => {
                 </Polyline>
 
 
+                 {/* 
+                Added these new points
+
+                 */}
+
+                <Polyline
+                // E Thomas Ave & N Frederick Ave to N Frederick Ave & E Belleview Pl (GREEN)
+                coordinates={[
+                    { latitude: 43.061320, longitude: -87.884316 }, //point A- E Thomas Ave & N Frederick Ave
+                    { latitude: 43.066108, longitude: -87.884272 }, //point B- N Frederick Ave & E Belleview Pl
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+             
+                <Polyline
+                // E Webster Pl & N Oakland Ave to E Webster Pl & N Downer Ave (GREEN)
+                coordinates={[
+                    { latitude: 43.064933, longitude: -87.88808}, //point A- E Webster Pl & N Oakland Ave
+                    { latitude: 43.064911, longitude: -87.878076}, //point B- E Webster Pl & N Downer Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                // N Newhall St & E Providence Ave to E Locust Street & N Newhall St (GREEN)
+                coordinates={[
+                    { latitude: 43.081458, longitude: -87.890131}, //point A- N Newhall St & E Providence Ave
+                    { latitude: 43.071065, longitude: -87.890353}, //point B- E Locust Street & N Newhall St
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                // N Bartlett Ave & E Providence Ave to E Locust St & N Bartlett Ave (GREEN)
+                coordinates={[
+                    { latitude: 43.081472, longitude: -87.888915}, //point A- N Bartlett Ave & E Providence Ave
+                    { latitude: 43.071053, longitude: -87.889165}, //point B- E Locust Street & N Bartlett Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+                
+
+                <Polyline
+                // 1st point- N Cambridge Ave to N Cambridge Ave (GREEN)
+                coordinates={[
+                    { latitude: 43.081451, longitude: -87.890663}, //point A- N Cambridge Ave
+                    { latitude: 43.078641, longitude: -87.891391}, //point B- N Cambridge Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                // 2nd point- N Cambridge Ave to E Locust St & N Cambridge Ave (GREEN)
+                coordinates={[
+                    { latitude: 43.078641, longitude: -87.891391}, //point A- N Cambridge Ave
+                    { latitude: 43.071087, longitude: -87.891528}, //point B- E Locust Street & N Cambridge Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+              
+
+                <Polyline
+                // E Edgewood Ave & East River Park Ct to East River Park Ct (GREEN)
+                coordinates={[
+                    { latitude: 43.081949, longitude: -87.887637}, //point A- E Edgewood Ave & East River Park Ct
+                    { latitude: 43.081960, longitude: -87.888182}, //point B- East River Park Ct
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                // E Newport Ave & N Murray Ave to E Edgewood Ave & N Murray Ave (GREEN)
+                coordinates={[
+                    { latitude: 43.081955, longitude: -87.885182}, //point A- E Newport Ave & N Murray Ave
+                    { latitude: 43.079435, longitude: -87.8855276 }, //point B- E Edgewood Ave & N Murray Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                // E Newport Ave & N Frederick Ave to E Edgewood Ave & N Frederick Ave (GREEN)
+                coordinates={[
+                    { latitude: 43.081964, longitude: -87.883973}, //point A- E Newport Ave & N Frederick Ave
+                    { latitude: 43.079425, longitude: -87.884023 }, //point B- E Edgewood Ave & N Frederick Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+        
 
                 {/* 
-                Added these points
+                Added these new points
 
                  */}
 
