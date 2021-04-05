@@ -86,7 +86,7 @@ export const HomeScreen = ({ navigation }) => {
                   ['#18224B', 0.33],
                   ['#009DD9', 0.33],
                 ]}
-                size={325}
+                size={315} //325
                 isLinearGradient="true"
                 // here is the code for how long the timer waits before resetting after finishing countdown in (ms)
                 onComplete={() => {
