@@ -42,6 +42,210 @@ export const MapScreen = () => {
                 </Polyline>
 
 
+                {/* 
+                Added these points
+
+                 */}
+                <Polyline
+                // E Edgewood Ave & N Cramer St to N Cramer St & E North Ave (GREEN)
+                coordinates={[
+                    { latitude: 43.081954, longitude: -87.886434 }, //point A- E Edgewood Ave & N Cramer St
+                    { latitude: 43.060143,  longitude: -87.886830 }, //point B- N Cramer St & E North Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                // E Kenwood Blvd & N Murray Ave to N Murray Ave & E North Ave (GREEN)
+                coordinates={[
+                    { latitude: 43.074553, longitude: -87.885417  }, //point A- E Kenwood Blvd & N Murray Ave
+                    { latitude: 43.060121,  longitude: -87.885637 }, //point B- N Murray Ave & E North Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+                <Polyline
+                // E Kenwood Blvd & N Frederick Ave to N Frederick Ave & N Farwell Ave (GREEN)
+                coordinates={[
+                    { latitude: 43.074590, longitude: -87.884164 }, //point A- E Kenwood Blvd & N Frederick Ave
+                    { latitude: 43.064322,  longitude: -87.884314 }, //point B- N N Frederick Ave & N Farwell Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                // E Kenwood Blvd & N Farwell Ave to N Farwell Ave & E Bradford Ave (GREEN)
+                coordinates={[
+                    { latitude: 43.074614, longitude: -87.881659 }, //point A- E Kenwood Blvd &  N Farwell Ave
+                    { latitude: 43.063718,  longitude: -87.881821}, //point B- N Farwell Ave & E Bradford Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+
+                <Polyline
+                // N Farwell Ave & E Bradford Ave N Farwell Ave to N Farwell Ave & E North Ave (GREEN)
+                coordinates={[
+                    { latitude: 43.063709, longitude: -87.881988 }, //point A- N Farwell Ave & E Bradford Ave
+                    { latitude: 43.060117,  longitude: -87.885453 }, //point B- N Farwell Ave & E North Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                // N Prospect Ave & E Bradford Ave to N Prospect Ave & E North Ave (GREEN)
+                coordinates={[
+                    { latitude: 43.063706, longitude: -87.880287 }, //point A- N Prospect Ave & E Bradford Ave 
+                    { latitude: 43.060129,  longitude: -87.883705 }, //point B- N Prospect Ave & E North Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                // N Prospect Ave & E Bradford Ave to N Prospect Ave & E Kenwood Blvd (GREEN)
+                coordinates={[
+                    { latitude: 43.063720, longitude: -87.880585 }, //point A- N Prospect Ave & E Bradford Ave 
+                    { latitude: 43.074588,  longitude: -87.880435 }, //point B- N Prospect Ave & E Kenwood Blvd
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                // N Stowell Ave & E Kenwood Blvd to N Stowell Ave & E Bradford Ave (GREEN)
+                coordinates={[
+                    { latitude: 43.074571, longitude: -87.879207 }, //point A- N Stowell Ave & E Kenwood Blvd
+                    { latitude: 43.063707, longitude: -87.879345 }, //point B- N Stowell Ave & E Bradford Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                // N Oakland Ave & E Webster Pl to E Webster Pl & N Downer Ave (GREEN)
+                coordinates={[
+                    { latitude: 43.074571, longitude: -87.879207 }, //point A- N Oakland Ave & E Webster Pl
+                    { latitude: 43.063707, longitude: -87.879345 }, //point B- Webster Pl & N Downer Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                // 1 side of Newberry Street- N Oakland Ave & E Newberry Blvd to E Newberry Blvd & N Lake Dr (GREEN)
+                coordinates={[
+                    { latitude: 43.069445, longitude: -87.887918 }, //point A- N Oakland Ave & E Newberry Blvd
+                    { latitude: 43.069381, longitude: -87.872810 }, //point B- E Newberry Blvd & N Lake Dr
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                // Other side of Newberry Street- N Oakland Ave & E Newberry Blvd to E Newberry Blvd & N Lake Dr (GREEN)
+                coordinates={[
+                    { latitude: 43.069220, longitude: -87.887920 }, //point A- N Oakland Ave & E Newberry Blvd
+                    { latitude: 43.069165, longitude: -87.872864}, //point B- E Newberry Blvd & N Lake Dr
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                //N Bartlett Ave & E Thomas Ave to E Thomas Ave & N Farwell Ave (GREEN)
+                coordinates={[
+                    { latitude: 43.061350, longitude: -87.889291 }, //point A- N Bartlett Ave & E Thomas Ave
+                    { latitude: 43.061320, longitude: -87.884316 }, //point B- E Thomas Ave & N Farwell Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                //  E Greenwich Ave & N Oakland Ave to E Greenwich Ave & N Farwell Ave (GREEN)
+                coordinates={[
+                    { latitude: 43.062534, longitude: -87.888037 }, //point A- E Greenwich Ave & N Oakland Ave
+                    { latitude: 43.062531, longitude: -87.883099 }, //point B- E Greenwich Ave & N Farwell Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+                <Polyline
+                //  E Linnwood Ave & N Cambridge Ave to E Linnwood Ave & N Lake Dr (GREEN)
+                coordinates={[
+                    { latitude: 43.072841, longitude: -87.891541 }, //point A- E Linnwood Ave & N Cambridge Ave
+                    { latitude: 43.072755, longitude: -87.87255 }, //point B- E Linnwood Ave & N Lake Dr
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                //  E Hartford Ave & N Cambridge Ave to E Hartford Ave & N Lake Dr (GREEN)
+                coordinates={[
+                    { latitude: 43.077647, longitude: -87.891444 }, //point A- E Hartford Ave & N Cambridge Ave
+                    { latitude: 43.077630, longitude: -87.872315 }, //point B- E Hartford Ave & N Lake Dr
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                //  E Hampshire St & N Cambridge Ave to E Hampshire St & N Cramer St (GREEN)
+                coordinates={[
+                    { latitude: 43.0, longitude: -87.8 }, //point A- E Hampshire St & N Cambridge Ave 
+                    { latitude: 43.075643, longitude: -87.886605 }, //point B- E Hampshire St & N Cramer St
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                {/* 
+                Added these points
+
+                 */}
+
+
+
+
+
                 <Polyline
                // E Edgewood Ave & N Oakland Ave to N Oakland Ave & E North Ave (GREEN)
                     coordinates={[
