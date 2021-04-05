@@ -2,7 +2,7 @@
 import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { FontAwesome, Ionicons } from '@expo/vector-icons';
+import { FontAwesome } from '@expo/vector-icons';
 import { createStackNavigator } from '@react-navigation/stack';
 import { StyleSheet, Text, View, ImageBackground, TouchableOpacity, Touchable } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
@@ -10,7 +10,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MapScreen } from './src/screens/mapscreen/MapScreen';
 import { HomeScreen } from './src/screens/homescreen/HomeScreen';
 import LandingPage from './src/screens/landingpage/LandingPage';
-// import { NotificationScreen } from './src/screens/notificationscreen/NotificationScreen';
+import { NotificationScreen } from './src/screens/notificationscreen/NotificationScreen';
 import AccountScreen from './src/screens/accountscreen/AccountScreen';
 import PermitScreen from './src/screens/permitscreen/PermitScreen';
 import { NightPermitScreen} from './src/screens/permitscreen/NightPermitScreen';
@@ -37,16 +37,16 @@ const Tab = createBottomTabNavigator();
             // this allows use to dynamically change the icon based on the name of the route
             let iconName;
             if (route.name === 'Home') {
-              iconName = focused ? 'timer-outline' : 'timer-outline';
+              iconName = focused ? 'home' : 'home';
             } else if (route.name === 'Map') {
-              iconName = focused ? 'map-outline' : 'map-outline';
+              iconName = focused ? 'map-marker' : 'map-marker';
             } else if (route.name === 'Account') {
-              iconName = focused ? 'settings-outline' : 'settings-outline';
+              iconName = focused ? 'user' : 'user';
             } else if (route.name === 'Permits') {
-              iconName = focused ? 'md-clipboard-outline' : 'md-clipboard-outline';
+              iconName = focused ? 'clipboard' : 'clipboard';
             }
             // You can return any component that you like here!
-            return <Ionicons name={iconName} size={size} color={color} />;
+            return <FontAwesome name={iconName} size={size} color={color} />;
             
           },
         })}
