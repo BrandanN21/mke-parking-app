@@ -509,7 +509,7 @@ export const MapScreen = () => {
                 <Polyline
                 // N Lake Dr to N Lake Dr & N Downer Ave (RED)
                 coordinates={[
-                    { latitude: 43.059989,  longitude: -87.880417} // point A- N Lake Dr
+                    { latitude: 43.059989,  longitude: -87.880417}, // point A- N Lake Dr
                     { latitude: 43.062541, longitude: -87.877983 }, //point B- N Lake Dr & N Downer Ave
                     ]}
                     strokeColor="red" // fallback for when `strokeColors` is not supported by the map-provider
