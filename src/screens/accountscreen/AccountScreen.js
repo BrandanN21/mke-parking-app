@@ -11,10 +11,10 @@ export default function AccountScreen() {
                 <TouchableHighlight
                 style={[styles.profileImgContainer, { borderColor: 'green', borderWidth:1 }]}
                 >
-                    <Image source={require("../../../assets/persona.jpg")}
+                    <Image source={require("../../../assets/pounce.jpg")}
                     style={styles.profileImg} />
                 </TouchableHighlight>
-                <Text style={styles.text}>Eliana Featherstone</Text>
+                <Text style={styles.text}>Pounce</Text>
             </View>
 
             <SettingsPage style={styles.settings}>
