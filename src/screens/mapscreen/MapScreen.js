@@ -494,6 +494,30 @@ export const MapScreen = () => {
                 </Polyline>
 
 
+                <Polyline
+                // N Oakland Ave & E Hartford Ave to E Hartford Ave & N Downer Ave (RED)
+                coordinates={[
+                    { latitude: 43.077637, longitude: -87.877698}, //point A- N Oakland Ave & E Hartford Ave
+                    { latitude: 43.077618, longitude: -87.877707 }, //point B- E Hartford Ave & N Downer Ave
+                    ]}
+                    strokeColor="red" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                // N Lake Dr to N Lake Dr & N Downer Ave (RED)
+                coordinates={[
+                    { latitude: 43.059989,  longitude: -87.880417} // point A- N Lake Dr
+                    { latitude: 43.062541, longitude: -87.877983 }, //point B- N Lake Dr & N Downer Ave
+                    ]}
+                    strokeColor="red" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
                 {/* 
                 Added these new points
 
@@ -833,7 +857,7 @@ export const MapScreen = () => {
                 // E North Ave & N Lake Dr to N Lake Dr (RED)
                     coordinates={[
                         { latitude: 43.060090,  longitude: -87.88116}, //point A- E North Ave & N Lake Dr
-                        { latitude: 43.059989,  longitude: -87.880417} // point B- E North Ave & N Lake Dr
+                        { latitude: 43.059989,  longitude: -87.880417} // point B- N Lake Dr
                     ]}
                     strokeColor="red" // fallback for when `strokeColors` is not supported by the map-provider
                     strokeWidth={4}
