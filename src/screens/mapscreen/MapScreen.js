@@ -252,7 +252,7 @@ export const MapScreen = () => {
                 <Polyline
                 // 3rd point- E Hampshire St to E Hampshire St & N Cambridge Ave  (GREEN)
                 coordinates={[
-                    { latitude: 43.075681, longitude: -87.890236 }, //point A- E Hampshire St 
+                    { latitude: 43.075781, longitude: -87.890818 }, //point A- E Hampshire St 
                     { latitude: 43.075812, longitude: -87.891501 }, //point B- E Hampshire St & N Cambridge Ave
                     ]}
                     strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
@@ -308,11 +308,6 @@ export const MapScreen = () => {
                 >
                 </Polyline>
 
-
-                 {/* 
-                Added these new points
-
-                 */}
 
                 <Polyline
                 // E Thomas Ave & N Frederick Ave to N Frederick Ave & E Belleview Pl (GREEN)
@@ -401,8 +396,8 @@ export const MapScreen = () => {
                 <Polyline
                 // E Newport Ave & N Murray Ave to E Edgewood Ave & N Murray Ave (GREEN)
                 coordinates={[
-                    { latitude: 43.081955, longitude: -87.885182}, //point A- E Newport Ave & N Murray Ave
-                    { latitude: 43.079435, longitude: -87.8855276 }, //point B- E Edgewood Ave & N Murray Ave
+                    { latitude: 43.079439, longitude: -87.885287}, //point A- E Newport Ave & N Murray Ave
+                    { latitude: 43.081890, longitude: -87.885193 }, //point B- E Edgewood Ave & N Murray Ave
                     ]}
                     strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
                     strokeWidth={4}
@@ -462,7 +457,7 @@ export const MapScreen = () => {
                 // E Hartford Ave & N Marietta Ave to E Newberry Blvd & N Marietta Ave (GREEN)
                 coordinates={[
                     { latitude: 43.077619, longitude: -87.873220 }, //point A- E Hartford Ave & N Marietta Ave
-                    { latitude: 43.069383, longitude: -87.87423 }, //point B- E Newberry Blvd & N Marietta Ave
+                    { latitude: 43.069394, longitude: -87.873424 }, //point B- E Newberry Blvd & N Marietta Ave
                     ]}
                     strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
                     strokeWidth={4}
@@ -497,8 +492,8 @@ export const MapScreen = () => {
                 <Polyline
                 // N Oakland Ave & E Hartford Ave to E Hartford Ave & N Downer Ave (RED)
                 coordinates={[
-                    { latitude: 43.077637, longitude: -87.877698}, //point A- N Oakland Ave & E Hartford Ave
-                    { latitude: 43.077618, longitude: -87.877707 }, //point B- E Hartford Ave & N Downer Ave
+                    { latitude: 43.077604, longitude: -87.877759}, //point A- N Oakland Ave & E Hartford Ave
+                    { latitude: 43.077630, longitude: -87.887699 }, //point B- E Hartford Ave & N Downer Ave
                     ]}
                     strokeColor="red" // fallback for when `strokeColors` is not supported by the map-provider
                     strokeWidth={4}
@@ -507,22 +502,51 @@ export const MapScreen = () => {
 
 
                 <Polyline
-                // N Lake Dr to N Lake Dr & N Downer Ave (RED)
+                // 1st point- E Newport Ct & N Lake Dr to E Newport Ct (GREEN)
                 coordinates={[
-                    { latitude: 43.059989,  longitude: -87.880417}, // point A- N Lake Dr
-                    { latitude: 43.062541, longitude: -87.877983 }, //point B- N Lake Dr & N Downer Ave
+                    { latitude: 43.078909, longitude: -87.872393 }, //point A- E Newport Ct & N Lake Dr 
+                    { latitude: 43.078906, longitude: -87.871929 }, //point B- E Newport Ct
                     ]}
-                    strokeColor="red" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
                     strokeWidth={4}
                 >
                 </Polyline>
 
 
-                {/* 
-                Added these new points
+                <Polyline
+                // 2nd point- E Newport Ct to E Newport Ct (GREEN)
+                coordinates={[
+                    { latitude: 43.078906, longitude: -87.871929 }, //point A- E Newport Ct  
+                    { latitude: 43.078700, longitude: -87.871030 }, //point B- E Newport Ct
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
 
-                 */}
 
+                <Polyline
+                // N Windermere Ct & E Hartford Ave to N Windermere Ct (GREEN)
+                coordinates={[
+                    { latitude: 43.077622, longitude: -87.873728 }, //point A- N Windermere Ct & E Hartford Ave
+                    { latitude: 43.078028, longitude: -87.873726 }, //point B- N Windermere Ct
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                // N Newhall Ln & E Bradford Ave to N Newhall Ln (GREEN)
+                coordinates={[
+                    { latitude: 43.063781, longitude: -87.889865 }, //point A-  N Newhall Ln & E Bradford Ave
+                    { latitude: 43.062840, longitude: -87.889870 }, //point B-  N Newhall Ln
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
 
 
                 <Polyline
