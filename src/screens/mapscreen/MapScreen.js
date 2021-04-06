@@ -413,7 +413,7 @@ export const MapScreen = () => {
                 <Polyline
                 // E Newport Ave & N Frederick Ave to E Edgewood Ave & N Frederick Ave (GREEN)
                 coordinates={[
-                    { latitude: 43.081964, longitude: -87.883973}, //point A- E Newport Ave & N Frederick Ave
+                    { latitude: 43.081964, longitude: -87.883973 }, //point A- E Newport Ave & N Frederick Ave
                     { latitude: 43.079425, longitude: -87.884023 }, //point B- E Edgewood Ave & N Frederick Ave
                     ]}
                     strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
@@ -422,7 +422,53 @@ export const MapScreen = () => {
                 </Polyline>
 
 
+                <Polyline
+                // E Edgewood Ave & N Hackett Ave to E Park Pl & N Hackett Ave (GREEN)
+                coordinates={[
+                    { latitude: 43.081931, longitude: -87.876564 }, //point A- E Edgewood Ave & N Hackett Ave
+                    { latitude: 43.067331, longitude: -87.876889 }, //point B- E Park Pl & N Hackett Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
         
+
+                <Polyline
+                // E Edgewood Ave & N Summit Ave to E Park Pl & N Summit Ave (GREEN)
+                coordinates={[
+                    { latitude: 43.081935, longitude: -87.875418 }, //point A- E Edgewood Ave & N Summit Ave
+                    { latitude: 43.067331, longitude: -87.875727 }, //point B- E Park Pl & N Summit Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                // E Edgewood Ave & N Shepard Ave to E Park Pl & N Shepard Ave (GREEN)
+                coordinates={[
+                    { latitude: 43.081925, longitude: -87.874266 }, //point A- E Edgewood Ave & N Shepard Ave
+                    { latitude: 43.067317, longitude: -87.874587 }, //point B- E Park Pl & N Shepard Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                // E Hartford Ave & N Marietta Ave to E Newberry Blvd & N Marietta Ave (GREEN)
+                coordinates={[
+                    { latitude: 43.077619, longitude: -87.873220 }, //point A- E Hartford Ave & N Marietta Ave
+                    { latitude: 43.069383, longitude: -87.87423 }, //point B- E Newberry Blvd & N Marietta Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
 
                 {/* 
                 Added these new points
