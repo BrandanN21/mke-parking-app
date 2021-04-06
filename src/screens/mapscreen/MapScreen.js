@@ -205,7 +205,7 @@ export const MapScreen = () => {
                 //  E Linnwood Ave & N Cambridge Ave to E Linnwood Ave & N Lake Dr (GREEN)
                 coordinates={[
                     { latitude: 43.072841, longitude: -87.891541 }, //point A- E Linnwood Ave & N Cambridge Ave
-                    { latitude: 43.072755, longitude: -87.87255 }, //point B- E Linnwood Ave & N Lake Dr
+                    { latitude: 43.072756, longitude: -87.872135 }, //point B- E Linnwood Ave & N Lake Dr
                     ]}
                     strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
                     strokeWidth={4}
@@ -463,6 +463,30 @@ export const MapScreen = () => {
                 coordinates={[
                     { latitude: 43.077619, longitude: -87.873220 }, //point A- E Hartford Ave & N Marietta Ave
                     { latitude: 43.069383, longitude: -87.87423 }, //point B- E Newberry Blvd & N Marietta Ave
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                // E Hampshire St & N Downer Ave to E Hampshire St & N Lake Dr (GREEN)
+                coordinates={[
+                    { latitude: 43.075639, longitude: -87.877898 }, //point A- E Hampshire St & N Downer Ave
+                    { latitude: 43.075652, longitude: -87.872139 }, //point B- E Hampshire St & N Lake Dr
+                    ]}
+                    strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
+                    strokeWidth={4}
+                >
+                </Polyline>
+
+
+                <Polyline
+                // E Newport Ave & N Downer Ave to E Newport Ave & N Lake Dr (GREEN)
+                coordinates={[
+                    { latitude: 43.079435, longitude: -87.877803}, //point A- E Newport Ave & N Downer Ave
+                    { latitude: 43.079422, longitude: -87.872531 }, //point B- E Newport Ave & N Lake Dr
                     ]}
                     strokeColor="green" // fallback for when `strokeColors` is not supported by the map-provider
                     strokeWidth={4}
