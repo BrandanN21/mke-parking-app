@@ -1298,10 +1298,6 @@ export const MapScreen = () => {
                     strokeWidth={4}
                 >
                 </Polyline>
-
-
-
-
         </MapView> 
         <View style={styles.scrollContainer}>
             <ScrollView style={styles.scrollView}>
